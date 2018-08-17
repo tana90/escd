@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapCellIdentifier" rowHeight="506" id="b3A-P8-rgV" customClass="MapCell" customModule="SSER2018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="506"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b3A-P8-rgV" id="IQ8-X5-0uk">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="505.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="99" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="kF9-BV-gVR">
+                        <rect key="frame" x="0.0" y="0.0" width="367" height="506"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schita" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-iG-aeD">
+                                <rect key="frame" x="0.0" y="0.0" width="1037" height="703"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="703" id="Yoe-R9-bj2"/>
+                                    <constraint firstAttribute="width" constant="1037" id="fPe-ma-TC0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="leading" secondItem="kF9-BV-gVR" secondAttribute="leading" id="7Om-qS-JRV"/>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="top" secondItem="kF9-BV-gVR" secondAttribute="top" id="TW5-sL-Tfu"/>
+                            <constraint firstAttribute="bottom" secondItem="tdP-iG-aeD" secondAttribute="bottom" constant="-197" id="UQ1-tA-BJ1"/>
+                            <constraint firstAttribute="trailing" secondItem="tdP-iG-aeD" secondAttribute="trailing" constant="-670" id="ZJW-ya-mgd"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kF9-BV-gVR" firstAttribute="centerY" secondItem="IQ8-X5-0uk" secondAttribute="centerY" id="62A-yi-E4D"/>
+                    <constraint firstItem="kF9-BV-gVR" firstAttribute="top" secondItem="IQ8-X5-0uk" secondAttribute="top" id="Dha-Sg-zrd"/>
+                    <constraint firstItem="kF9-BV-gVR" firstAttribute="leading" secondItem="IQ8-X5-0uk" secondAttribute="leading" id="JNe-1x-tga"/>
+                    <constraint firstItem="kF9-BV-gVR" firstAttribute="centerX" secondItem="IQ8-X5-0uk" secondAttribute="centerX" id="PHN-ES-PfP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapImageView" destination="tdP-iG-aeD" id="MHX-NH-GK9"/>
+                <outlet property="scrollView" destination="kF9-BV-gVR" id="o66-qJ-xlr"/>
+            </connections>
+            <point key="canvasLocation" x="-285" y="-18"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="schita" width="7483" height="5291"/>
+    </resources>
+</document>

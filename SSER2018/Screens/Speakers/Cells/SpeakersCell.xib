@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="speakersCell" rowHeight="88" id="Ohx-1Y-Ah5" customClass="SpeakersCell" customModule="SSER2018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ohx-1Y-Ah5" id="cQP-jd-b9d">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wdz-v1-LEe">
+                        <rect key="frame" x="16" y="11" width="66" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="Cri-Dj-Zqe"/>
+                            <constraint firstAttribute="width" constant="66" id="zJI-tU-2QU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="33"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKT-3Y-mYV">
+                        <rect key="frame" x="90" y="16" width="243" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-J6-cy4">
+                        <rect key="frame" x="90" y="38" width="55" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BKT-3Y-mYV" firstAttribute="trailing" secondItem="cQP-jd-b9d" secondAttribute="trailingMargin" id="51s-wH-piE"/>
+                    <constraint firstItem="Wdz-v1-LEe" firstAttribute="bottom" secondItem="cQP-jd-b9d" secondAttribute="bottomMargin" id="CeD-Z2-Rx1"/>
+                    <constraint firstItem="BKT-3Y-mYV" firstAttribute="leading" secondItem="Wdz-v1-LEe" secondAttribute="trailing" constant="8" id="Nmx-Dh-WHK"/>
+                    <constraint firstItem="BKT-3Y-mYV" firstAttribute="top" secondItem="cQP-jd-b9d" secondAttribute="topMargin" constant="5" id="Oxh-xN-Isq"/>
+                    <constraint firstItem="Wdz-v1-LEe" firstAttribute="leading" secondItem="cQP-jd-b9d" secondAttribute="leadingMargin" id="SMW-Xq-3VX"/>
+                    <constraint firstItem="lNr-J6-cy4" firstAttribute="leading" secondItem="Wdz-v1-LEe" secondAttribute="trailing" constant="8" id="UlG-wE-BTr"/>
+                    <constraint firstItem="lNr-J6-cy4" firstAttribute="top" secondItem="BKT-3Y-mYV" secondAttribute="bottom" constant="1" id="XRp-Lg-ML9"/>
+                    <constraint firstItem="Wdz-v1-LEe" firstAttribute="top" secondItem="cQP-jd-b9d" secondAttribute="topMargin" id="o3f-g6-YYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryLabel" destination="lNr-J6-cy4" id="ptU-Wi-jmT"/>
+                <outlet property="nameLabel" destination="BKT-3Y-mYV" id="5OQ-He-UsG"/>
+                <outlet property="photoView" destination="Wdz-v1-LEe" id="sk8-qG-kHV"/>
+            </connections>
+            <point key="canvasLocation" x="-22" y="-114"/>
+        </tableViewCell>
+    </objects>
+</document>
