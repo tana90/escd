@@ -89,7 +89,7 @@ extension BaseDetailsViewController {
             self.dismiss(animated: true, completion: nil)
         }
         
-        if scrollView.contentOffset.y >= 140  {
+        if scrollView.contentOffset.y >= 120  {
             navigationHeaderView.showTitle()
         } else {
             navigationHeaderView.hideTitle()

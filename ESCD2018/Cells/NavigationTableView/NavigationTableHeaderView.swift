@@ -10,7 +10,8 @@ import UIKit
 
 final class NavigationTableHeaderView: UIView {
     
-    @IBOutlet private weak var closeButton: UIButton!
+    @IBOutlet fileprivate weak var backView: UIView!
+    @IBOutlet fileprivate weak var closeButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     public var closeActionHandler: (()->Void)?
     public var moreActionHander: (()->Void)?
@@ -32,6 +33,7 @@ final class NavigationTableHeaderView: UIView {
        UIView.animate(withDuration: 0.2) { [weak self] in
             guard let _ = self else { return }
             self!.titleLabel.alpha = 1.0
+            self!.backView.backgroundColor = .black
             }
     }
     
@@ -39,6 +41,7 @@ final class NavigationTableHeaderView: UIView {
         UIView.animate(withDuration: 0.3) { [weak self] in
             guard let _ = self else { return }
             self!.titleLabel.alpha = 0.0
+            self!.backView.backgroundColor = .clear
             }
     }
 }

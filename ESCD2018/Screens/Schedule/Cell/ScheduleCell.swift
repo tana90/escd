@@ -74,10 +74,10 @@ final class ScheduleCell: UITableViewCell {
     
     func showFavoriteInfo(_ dictionary: DefaultDictionary) {
         if dictionary["ScheduleFavorite"] as! Int == 1 {
-            backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+            //backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
             favoriteLabel.alpha = 1.0
         } else {
-            backgroundColor = .white
+            //backgroundColor = .white
             favoriteLabel.alpha = 0.0
         }
     }
