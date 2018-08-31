@@ -1,0 +1,8 @@
+João Fonseca
+
+This computer has no Brain, use your own. 
+
+Despite remarkable achievements in computer science and more recently significant advances in artificial intelligence, digital dentistry is still mainly a user-dependent endeavour.  That said, the principles and knowledge-based approach in esthetic rehabilitation remain the same. Nevertheless, digital workflows apply powerful tools that used with wisdom have potencial to render much of the manual labor from planning to fabrication of dental prosthesis caput. This lecture will focus on tools and techniques such as facial scanning, virtual mock up, direct mock up, natural tooth digital implementation, dental vs open source based planning softwares and their integration with modern fabrication processes such as 3D printing and Computer Aided Milling.  
+
+
+
