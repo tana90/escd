@@ -18,7 +18,7 @@ final class SpeakersCell: UITableViewCell {
         if let _ = dictionary["name"] as? String {
             nameLabel.text = dictionary["name"]! as? String
         }
-        
+    
         if let _ = dictionary["picture"] as? String,
             let image = UIImage(named: dictionary["picture"]! as! String) {
             photoView.image = image

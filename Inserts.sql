@@ -1,3 +1,31 @@
+
+/*======================================================================================================*/
+/*SPONSORS==============================================================================================*/
+DELETE FROM Sponsors;
+
+/* Platinum sponsor */
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Planmeca', 'planmeca.jpg', 'https://www.planmeca.com', 'Platinum Sponsor', '1');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('3M', '3m.jpg', 'https://www.3m.com.es/3M/es_ES/empresa-es/', 'Platinum Sponsor', '1');
+
+/* Gold sponsor */
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Dentsply Sirona', 'dentsply.jpg', 'https://www.dentsplysirona.com/es-ib', 'Gold Sponsor', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('ROCS', 'rocs.jpg', 'http://www.rocsinfo.com', 'Gold Sponsor', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Mis Portugal', 'mis.jpg', 'https://www.mis-implants.com/International/PT.aspx', 'Gold Sponsor', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('DMG', 'dmg.jpg', 'https://www.dmg-dental.com/en/home/', 'Gold Sponsor', '2');
+
+/* Silver sponsor */
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Coltene', 'coltene.jpg', 'https://www.coltene.com/pt/', 'Silver Sponsor', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('GC', 'gc.jpg', 'https://www.gceurope.com', 'Silver Sponsor', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Shofu', 'shofu.jpg', 'http://www.shofu.com', 'Silver Sponsor', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Voco', 'voco.jpg', 'https://www.voco.dental/en/home.aspx', 'Silver Sponsor', '3');
+
+/* Official car */
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Audi', 'audi.jpg', 'http://www.sivaonline.pt/Pages/Cubo.aspx', 'Official Car', '4');
+
+/*======================================================================================================*/
+
+
+
 /*======================================================================================================*/
 /*SECTIONS==============================================================================================*/
 DELETE FROM Sections;
@@ -24,9 +52,9 @@ INSERT INTO Sections (objectId, beginTime, endTime, type) VALUES ('12', '2018-09
 /*SCHEDULESTYPES=============================================================================================*/
 DELETE FROM ScheduleTypes;
 
-INSERT INTO ScheduleTypes (objectId, name) VALUES ('1', 'Thursday, 20 September');
-INSERT INTO ScheduleTypes (objectId, name) VALUES ('2', 'Friday, 21 September');
-INSERT INTO ScheduleTypes (objectId, name) VALUES ('3', 'Saturday, 22 September');
+INSERT INTO ScheduleTypes (objectId, name) VALUES ('1', 'Thursday, 20 Sept');
+INSERT INTO ScheduleTypes (objectId, name) VALUES ('2', 'Friday, 21 Sept');
+INSERT INTO ScheduleTypes (objectId, name) VALUES ('3', 'Saturday, 22 Sept');
 /*======================================================================================================*/
 
 
@@ -36,9 +64,9 @@ DELETE FROM Locations;
 
 INSERT INTO Locations (objectId, name) VALUES ('1', 'Auditorium I Conferences');
 INSERT INTO Locations (objectId, name) VALUES ('2', 'Auditorium II Conferences');
-INSERT INTO Locations (objectId, name) VALUES ('3', 'Hall 2 Hands-on Session');
-INSERT INTO Locations (objectId, name) VALUES ('4', 'Hall 3 Hands-on Session');
-INSERT INTO Locations (objectId, name) VALUES ('5', 'Hall 6 Hands-on Session');
+INSERT INTO Locations (objectId, name) VALUES ('3', 'Room 1 Hands-on Session');
+INSERT INTO Locations (objectId, name) VALUES ('4', 'Room 2 Hands-on Session');
+INSERT INTO Locations (objectId, name) VALUES ('5', 'Room 5 Hands-on Session');
 /*======================================================================================================*/
 
 
@@ -49,7 +77,7 @@ DELETE FROM SpeakerTypes;
 
 INSERT INTO SpeakerTypes (objectId, name) VALUES ('1', 'Lecture');
 INSERT INTO SpeakerTypes (objectId, name) VALUES ('2', 'Hands-On');
-INSERT INTO SpeakerTypes (objectId, name) VALUES ('3', 'Member Pearls');
+/*INSERT INTO SpeakerTypes (objectId, name) VALUES ('3', 'Member Pearls');*/
 /*======================================================================================================*/
 
 
@@ -86,19 +114,19 @@ DELETE FROM Abstracts;
 
 
 
-/* 0. Dr. Giuseppe Chiodera */
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('0', 'Direct posterior restorations : from diagnosis to Essential Lines', '', '1', '0');
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('0', '1', '0');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('0', '0', '0');
+/* 777. Dr. Giuseppe Chiodera */
+INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('777', 'Direct posterior restorations : from diagnosis to Essential Lines', '', '1', '777');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('777', '1', '777');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('777', '777', '777');
 
 
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('1', 'Essential lines developed bu style Italiano, modern approaches for creating aesthetic posterior restorations using 3M Bulk fill materials ', '
+INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('778', 'Essential lines developed bu style Italiano, modern approaches for creating aesthetic posterior restorations using 3M Bulk fill materials ', '
 ', '2', '0');
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('1', '2', '0');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('1', '1', '0');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('778', '2', '777');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('778', '778', '777');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('0', 'Dr. Giuseppe Chiodera', 'Dr. Giuseppe Chiodera', 'chioderra.jpg', 'Graduated in Dentistry at the University of Brescia in 2004. In the same year
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('777', 'Dr. Giuseppe Chiodera', 'Dr. Giuseppe Chiodera', 'chioderra.jpg', 'Graduated in Dentistry at the University of Brescia in 2004. In the same year
 Winner Of a scholarship at Kings College University of London.
 Author and coauthor of articles in National and International journals . Style Italiano member .
 Speaker at National and international Conferences : about diagnosis , prevention , adhesive restorations ,bleaching , ozone , laser.
@@ -130,19 +158,16 @@ In cases where different types of abutments should be restored at the same arch,
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('3', '1', '2');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('3', '3', '2');
 
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('4', '1', '2');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('4', '3', '2');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('4', '1', '3');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('4', '3', '3');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('2', 'Prof. Dr. Nitzan Bichacho ', 'Prof. Dr. Nitzan Bichacho ', '0.jpg', 'Prof. Nitzan Bichacho
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('2', 'Prof. Dr. Nitzan Bichacho ', 'Prof. Dr. Nitzan Bichacho ', 'nitzan bichacho.jpg', 'Prof. Nitzan Bichacho
 Nitzan Bichacho, D.M.D. holds the post of expert in prosthodontics at the rank of professor, at the Faculty of Dental Medicine, Hebrew University, Jerusalem, Israel.
 He is Past President and a Life Member of the European Academy of Esthetic Dentistry (EAED). He also serves at the editorial boards of leading international dental journals.He is a co-inventor of the Nobel Active Implant System, the V3 implant system (MIS/Dentsply) and other techniques and systems that have become widely used around the world.
 Prof. Bichacho has been publishing and lecturing extensively worldwide in the fields of dental implant therapy, fixed prosthodontics, interdisciplinary treatments and innovative treatment modalities in esthetic dentistry.
-His private practice in Tel Aviv focuses on interdisciplinary treatments, where he collaborates with multinational master dental technicians.
-  
-
-', '1', 'Israel');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('3', '  Dr. Mirela Feraru', '  Dr. Mirela Feraru', '1.jpg', 'Dr. Mirela Feraru
+His private practice in Tel Aviv focuses on interdisciplinary treatments, where he collaborates with multinational master dental technicians.', '1', 'Israel');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('3', 'Dr. Mirela Feraru', 'Dr. Mirela Feraru', 'mirela feraru.jpg', 'Dr. Mirela Feraru
 Dr. Mirela Feraru graduated in 2005 from the Dental Faculty of the Timisoara University, Romania. 
 In 2009 she joined the Bichacho Clinic team in Tel Aviv, Israel and for the last 8 years Dr. Feraru has gained in-depth knowledge and experience in all fields of Perio-Prosthetic Aesthetic Dentistry, focusing on Restorative and Perioplastic surgery treatments. 
 She continues studying and participating in advanced programs and courses in the various fields of modern Perio-Prosthetics.
@@ -190,7 +215,7 @@ Member of ARCO (Italian Lecturer for Dental Technology Culture).
 Fellow Member of American Academy Esthetic Dentistry, AAED.
 Council Member Design Tecnique International.
 Member American Microscope Enhanced Dentistry, AMED.
-Clinical Assistant Professor, Division of Restorative Science at USC, University of Southern California, Los Angeles, California , USA.', '1', '');
+Clinical Assistant Professor, Division of Restorative Science at USC, University of Southern California, Los Angeles, California , USA.', '1', 'Italy');
 
 
 /* 5. Dr. Jordi Manauta */
@@ -244,14 +269,11 @@ INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('8
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('9', '1', '8');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('9', '8', '8');
 
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('10', '1', '8');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('10', '8', '8');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('10', '1', '9');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('10', '8', '9');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('8', 'Dr. Gianfranco Politano ', 'Dr. Gianfranco Politano ', '0.jpg', 'Dr. Marleen Peumans
-Was born on November 10, 1964, in Belgium. She obtained her degree in Dentistry in 1987 at the Catholic University of Leuven. Thereafter, she followed a 4-year post-graduate program at the Department of Operative Dentistry. She applied herself especially to the clinical use and the performance of anterior and posterior resin composites, bonded ceramic restorations, fibre-reinforced composite restorations and bleaching. She took part in numerous clinical studies concerning dentine adhesives, posterior composites, and ceramic veneers/inlays/onlays. In 1997 she obtained the degree of Doctor in Medical Sciences. From 2004 she became Professor at the Catholic University of Leuven. She has several national and international publications on her name concerning clinical performance of adhesive restorations and bleaching. 
-', '1', 'Italy');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('9', ' Dr. Marlenn Peumans', ' Dr. Marlenn Peumans', '1.jpg', 'Gianfranco was born in 1971 in Crotone, Italy.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('8', 'Dr. Gianfranco Politano ', 'Dr. Gianfranco Politano ', 'Gianfranco Politano.jpg', 'Gianfranco was born in 1971 in Crotone, Italy.
 He finished dental school at Modena University, in the north of Italy
 Founder member of Bio-Emulation group with Dr. P. Bazos and Dr. J.T. Guadix
 Active member of S.I.D.O.C. : italian society of conservative dentistry
@@ -262,9 +284,10 @@ He have an active collaboration with KUL University, Belgium, with Prof. M.Peuma
 He is a reviewer for different journal of adhesive dentistry.
 Gianfranco live and work in Rome.
 He focused on adhesive restorative dentistry and endodontic.
-He is an international lecturer and he published several articles about direct and indi- rect adhesive restorations   
+He is an international lecturer and he published several articles about direct and indi- rect adhesive restorations', '1', 'Italy');
 
-', '1', '');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('9', ' Dr. Marlenn Peumans', ' Dr. Marlenn Peumans', 'Marleen Peumans.jpg', 'Dr. Marleen Peumans
+Was born on November 10, 1964, in Belgium. She obtained her degree in Dentistry in 1987 at the Catholic University of Leuven. Thereafter, she followed a 4-year post-graduate program at the Department of Operative Dentistry. She applied herself especially to the clinical use and the performance of anterior and posterior resin composites, bonded ceramic restorations, fibre-reinforced composite restorations and bleaching. She took part in numerous clinical studies concerning dentine adhesives, posterior composites, and ceramic veneers/inlays/onlays. In 1997 she obtained the degree of Doctor in Medical Sciences. From 2004 she became Professor at the Catholic University of Leuven. She has several national and international publications on her name concerning clinical performance of adhesive restorations and bleaching.', '1', 'Italy');
 
 
 /* 8. Prof. Dr. Marius Steigmann */
@@ -393,7 +416,7 @@ Member of American Association of Cosmetic DentistryAACD;
 Member of Japanese Association of Esthetic DentistryJAED.', '1', 'China');
 
 
-/* 14. Dr. Jorge André */
+/* 14. Dr. Jorge André Cardoso */
 INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('17', 'Full-arch immediate implants - facially driven planning and prosthetics', 'The lecture will focus the planning and prosthetic aspects of fixed immediate implant rehabilitations for patients with hopeless dentition:
 - The prosthetic vs natural gingiva dilemma.
 - Planning and communicating tooth positions according to the face. - Immediate bridge design and laboratory communication
@@ -406,7 +429,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('19', '1', '16'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('19', '17', '16');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('16', 'Dr. Jorge André', 'Dr. Jorge André', 'cardoso_pp.jpg', 'Dr. Jorge Andre Cardoso
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('16', 'Dr. Jorge André Cardoso', 'Dr. Jorge André', 'cardoso_pp.jpg', 'Dr. Jorge Andre Cardoso
 Dr. Cardoso is Doctor of Dental Medicine (DMD) by the Faculty of Dental Medicine  Porto University  2002. Master in Clinical Dentistry (MClinDent) in Prosthodontics by Kings College  London
 University  2010. Honorary Clinical Teacher at the Master of Science in Aesthetic Dentistry at Kings College  London University  since 2015.Author of several articles published in peer-reviewed journals such as the JERD, EJED and IJED. Author of four chapters in the book Practical Procedures in Aesthetic Dentistry  2017. Lecturer at several national an international events and courses in the fields of Esthetic, Restorative, Periodontal and Interdisciplinry Dentistry.Personality of the year in Oral Rehabilitation by Saude Oral Magazine, attributed by peer colleagues  2016. Teacher in Esthetic, Restorative, Periodontal and Interdisciplinary Dentistry in Sorriso Natural and Foramen teaching centers.Regular attendee of congresses and courses internationally. Developer of the software MakeMeClear (TM) ( www. makemeclear.com ) to help dentists communicate with patients with more clarity about treatment plans.', '1', '');
 
@@ -432,10 +455,10 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('21', '1', '18'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('21', '19', '18');
 
 
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('20', 'Soft tissue management around teeth and implants ', '
+/*INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('20', 'Soft tissue management around teeth and implants ', '
 ', '2', '18');
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('22', '2', '18');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('22', '20', '18');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('22', '20', '18');*/
 
 
 INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('18', 'Prof. Dr. Andre Saadoun', 'Prof. Dr. Andre Saadoun', 'ANDRE SAADOUN.jpg', 'Dr .SAADOUN has received his Degree in Dental Surgery from the Faculty of Paris and completed his Post-Graduate Certificate in Periodontology at the University of Pennsylvania and Post-Graduate Certificate in Implantology at University of California in Los Angeles.
@@ -573,9 +596,11 @@ INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) 
 
 
 /* 23. Dr. George Gomez  */
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('29', 'Modern cementation technigues: choosing an appropiate cement for indirect dental restorations, from self etching cements to adhesive cementation', '', '1', '25');
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('31', '1', '25');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('31', '29', '25');
+INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('29', 'Modern cementation technigues: choosing an appropiate cement for indirect dental restorations, from self etching cements to adhesive cementation', '', '2', '200');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('31', '2', '200');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('31', '29', '200');
+
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('200', 'Dr. George Gomez', 'Dr. George Gomez', '', '', '2', 'Portugal');
 
 
 
@@ -644,16 +669,14 @@ Some interdisciplinary challenging clinical cases will be presented and discusse
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('35', '1', '27');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('35', '33', '27');
 
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('36', '1', '27');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('36', '33', '27');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('36', '1', '28');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('36', '33', '28');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('27', 'Dr. Eric Van Dooren ', 'Dr. Eric Van Dooren ', '0.jpg', 'Dr. Nuno Sousa Dias received his degree in Dentistry from Universidade Fernando Pessoa (Porto), in 2007. In the same year, he created and registered a Smiles Analysis named SAEF  Smiles Aesthetic Evaluation Form. He Completed the full-time Orthodontic Postgraduate Program at Tel Aviv University (ISRAEL) from 2008 to 2012. Was awarded with the 1st prize at the 4th Scientific Research International Competition of the Spring Meeting of the EAED (European Academy of Esthetic Dentistry), in 2010, in London (UK). He was elected ambassador for EPSOS (European Postgraduate Students Orthodontic Society) for Portugal and Israel for the years 2011 and 2012. Awarded by SEDO (Sociedad Espaola de Ortodoncia) with a fund to attend the AGE (Advanced Graduate Education) Didactic Courses at the Department of Orthodontics of HSDM (Harvard School of Dental Medicine), in 2013. He is member of several national and international dental and orthodontic scientific organisations. His practice is limited in Orthodontics at his own private clinic NSD-DENTISTRY (Portugal), since 2013 and he also Cooperates with multidisciplinary teams in Belgium, Germany and Istanbul. He is an international speaker in the field of Orthodontics and Smiles aesthetics.
-', '1', 'Belgium');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('28', ' Dr. Nuno Sousa Dias', ' Dr. Nuno Sousa Dias', '1.jpg', 'Dr. Eric Van Dooren attended the Katholieke Universiteit Leuven, Belgium, where he received his degree in dentistry in 1982. After graduating he opened a private practice in Antwerp, Belgium, which is limited to periodontics, fixed prosthodontics, and implants.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('27', 'Dr. Eric Van Dooren ', 'Dr. Eric Van Dooren ', 'VanDoreen.jpg', 'Dr. Eric Van Dooren attended the Katholieke Universiteit Leuven, Belgium, where he received his degree in dentistry in 1982. After graduating he opened a private practice in Antwerp, Belgium, which is limited to periodontics, fixed prosthodontics, and implants.
 Currently Dr. Van Dooren is a Visiting Professor at University of Liege ( Belgium) and University of Marseille . He is an active member of the European Academy of Esthetic Dentistry.
-Dr Van Dooren lectures nationally and internationally , mainly on aesthetics,implants and aesthetic periodontal surgery.
-', '1', 'Portugal');
+Dr Van Dooren lectures nationally and internationally , mainly on aesthetics,implants and aesthetic periodontal surgery.', '1', 'Belgium');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('28', ' Dr. Nuno Sousa Dias', ' Dr. Nuno Sousa Dias', 'nuno.jpg', 'Dr. Nuno Sousa Dias received his degree in Dentistry from Universidade Fernando Pessoa (Porto), in 2007. In the same year, he created and registered a Smiles Analysis named SAEF  Smiles Aesthetic Evaluation Form. He Completed the full-time Orthodontic Postgraduate Program at Tel Aviv University (ISRAEL) from 2008 to 2012. Was awarded with the 1st prize at the 4th Scientific Research International Competition of the Spring Meeting of the EAED (European Academy of Esthetic Dentistry), in 2010, in London (UK). He was elected ambassador for EPSOS (European Postgraduate Students Orthodontic Society) for Portugal and Israel for the years 2011 and 2012. Awarded by SEDO (Sociedad Espaola de Ortodoncia) with a fund to attend the AGE (Advanced Graduate Education) Didactic Courses at the Department of Orthodontics of HSDM (Harvard School of Dental Medicine), in 2013. He is member of several national and international dental and orthodontic scientific organisations. His practice is limited in Orthodontics at his own private clinic NSD-DENTISTRY (Portugal), since 2013 and he also Cooperates with multidisciplinary teams in Belgium, Germany and Istanbul. He is an international speaker in the field of Orthodontics and Smiles aesthetics.', '1', 'Portugal');
 
 
 /* 27. Dr. João Fonseca */
@@ -661,9 +684,11 @@ INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('3
 
 Despite remarkable achievements in computer science and more recently significant advances in artificial intelligence, digital dentistry is still mainly a user-dependent endeavour.  That said, the principles and knowledge-based approach in esthetic rehabilitation remain the same. Nevertheless, digital workflows apply powerful tools that used with wisdom have potencial to render much of the manual labor from planning to fabrication of dental prosthesis caput. This lecture will focus on tools and techniques such as facial scanning, virtual mock up, direct mock up, natural tooth digital implementation, dental vs open source based planning softwares and their integration with modern fabrication processes such as 3D printing and Computer Aided Milling.', 'This computer has no Brain, use your own. 
 
-Despite remarkable achievements in computer science and more recently significant advances in artificial intelligence, digital dentistry is still mainly a user-dependent endeavour.  That said, the principles and knowledge-based approach in esthetic rehabilitation remain the same. Nevertheless, digital workflows apply powerful tools that used with wisdom have potencial to render much of the manual labor from planning to fabrication of dental prosthesis caput. This lecture will focus on tools and techniques such as facial scanning, virtual mock up, direct mock up, natural tooth digital implementation, dental vs open source based planning softwares and their integration with modern fabrication processes such as 3D printing and Computer Aided Milling.', '1', '29');
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('37', '1', '29');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('37', '34', '29');
+Despite remarkable achievements in computer science and more recently significant advances in artificial intelligence, digital dentistry is still mainly a user-dependent endeavour.  That said, the principles and knowledge-based approach in esthetic rehabilitation remain the same. Nevertheless, digital workflows apply powerful tools that used with wisdom have potencial to render much of the manual labor from planning to fabrication of dental prosthesis caput. This lecture will focus on tools and techniques such as facial scanning, virtual mock up, direct mock up, natural tooth digital implementation, dental vs open source based planning softwares and their integration with modern fabrication processes such as 3D printing and Computer Aided Milling.', '1', '300');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('37', '1', '300');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('37', '34', '300');
+
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('300', 'Dr. Joao Fonseca', 'Dr. Joao Fonseca', 'fonseca.jpg', '', '1', 'Portugal');
 
 
 
@@ -730,7 +755,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('43', '1', '32'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('43', '40', '32');
 
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('44', '1', '32');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('44', '40', '32');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('44', '40', '33');
 
 
 INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('41', 'Simple Direct Composite Restorations in anterior toothThe layering techniques with composite resins are procedures described some years ago and we used it regularity in our clinical practice. Some of these techniques use several different opacities and increments of composites,leading to the dentist get confused in deciding which one to choose. The clinical reality of most dental clinics are based on simple procedures, easy to perform with suitable aesthetic and longlasting results. Some simple layeringtechniques makes the dentist daily work simple and predictable, enabling make direct esthetic and invisible composite resin restorations.In this Hands-On course we intend to work with a simplified technique for estheticrestorations, use only two opacities of composite resines.We will discuss the step by step clinical procedures in anterior tooth in order to preserve the remaining tooth tissue and follow the harmony and properties of the natural teeth.The participants will have the opportunity to make a class IV restoration in a central incisor applying the technique lectured, from the planning to finishing and polishing.', 'Simple Direct Composite Restorations in anterior toothThe layering techniques with composite resins are procedures described some years ago and we used it regularity in our clinical practice. Some of these techniques use several different opacities and increments of composites,leading to the dentist get confused in deciding which one to choose. The clinical reality of most dental clinics are based on simple procedures, easy to perform with suitable aesthetic and longlasting results. Some simple layeringtechniques makes the dentist daily work simple and predictable, enabling make direct esthetic and invisible composite resin restorations.
@@ -738,11 +763,11 @@ In this Hands-On course we intend to work with a simplified technique for esthet
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('45', '2', '32');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('45', '41', '32');
 
-INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('46', '2', '32');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('46', '41', '32');
+/*INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('46', '2', '32');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('46', '41', '33');*/
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('32', 'Dr. Paulo Monteiro ', 'Dr. Paulo Monteiro ', '0.jpg', ' Doctor of Dental Medicine, Instituto Superior de Cincias da Sade  Sul, Caparica, Portugal
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('32', 'Dr. Paulo Monteiro ', 'Dr. Paulo Monteiro ', 'Paulo.monteiro.jpg', 'Doctor of Dental Medicine, Instituto Superior de Cincias da Sade  Sul, Caparica, Portugal
  Masters degree in Dental Medicine, Instituto Superior de Cincias da Sade Egas Moniz, Caparica, Portugal
  Post-graduation in Aesthetic and Restorative Dentistry, ISCSEM, Caparica,Portugal
  International Professional Course of CAD/CAM technology in Restorative Dentistry, University of Zurich
@@ -757,7 +782,7 @@ Involved in research of new dental materials, including composite resins, dental
  Style Italiano effective member
  Member of the General Council of the Portuguese Dental Association-
  Exclusive clinical practice in aesthetic and cosmetic dentistry', '1', 'Portugal');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('33', ' Dr. Ines Barbosa', ' Dr. Ines Barbosa', '1.jpg', 'Ines Barbosa DDS
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('33', 'Dr. Ines Barbosa', 'Dr. Ines Barbosa', 'barbosa ines.jpg', 'Ines Barbosa DDS
 Received her degree in Dentistry from Universidade Fernando Pessoa, Porto, Portugal , in 2007.
 In 2008 concluded the course of Endodontics for Generalists, with Professor Rui Pereira da Costa in CUF Descobertas, Lisboa, Portugal.
 Received her Diploma of Aesthetic Dentistry in 2011 from Clinica Aparicio with Universidad Internacional de Catalunya , Barcelona, Spain.
@@ -827,7 +852,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('50', '1', '36'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('50', '45', '36');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('36', 'Dr. Raquel Zita', 'Dr. Raquel Zita', 'Zita.jpg', '
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('36', 'Dr. Raquel Zita Gomes', 'Dr. Raquel Zita', 'Zita.jpg', '
 
 Dr. Raquel Zita is a Dental Medical Doctor by the Faculty of Dental Medicine of the University of Oporto (FMDUP) (1996-2002) and Oral surgeon (specialist in oral surgery) by the Portuguese Dental Medical Association (OMD). She is a MINEC knight active member, opinion leader of Megagen Portugal, KOL of DSD by Coachman and Opinion leader of Osteobiol biomaterials. Dr. Zita is an IFZI instructor, collaboration with Bredent group, expert on Oralsurgerytube, Dentinaltubules and Dental XP educational platforms.  
 Her private practices is in Portugal and its dedicated exclusively to Implantology, advanced oral surgery and rehabilitation. She is a mentor of professional group Follow the RED and reviewer of Clinical Implant Dentistry and Related Research journal.
@@ -835,7 +860,7 @@ Her private practices is in Portugal and its dedicated exclusively to Implantolo
 
 
 /* 35. Dr. Pablo Santoro */
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('46', 'POSTERIORRESINS: Present, Past and FUTURE.', 'Reasons to choose resin,Physical and mechanicalscharasteristics of resins, Indications:Direct o Indirect, Build-up resins, Deep margin elevation, Principles of tooth preparation, Simple stratification Technique, polishing protocol, Adhesives resins cements for bondingcomposite restorations, clinical cases.', '1', '37');
+INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('46', 'POSTERIOR RESINS: Present, Past and FUTURE.', 'Reasons to choose resin,Physical and mechanicalscharasteristics of resins, Indications:Direct o Indirect, Build-up resins, Deep margin elevation, Principles of tooth preparation, Simple stratification Technique, polishing protocol, Adhesives resins cements for bondingcomposite restorations, clinical cases.', '1', '37');
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('51', '1', '37');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('51', '46', '37');
 
@@ -890,6 +915,20 @@ Mr. Brito is the Director of the Laboratory BioMimetik lab PEDRO BRITO.', '1', '
 
 
 
+/* 999. Member Pearls */
+INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('999', 'Member Pearls Session', '14.00  -  14.20  
+The  magic  of  no  prep/prepless  veneers  Jan  Kurtz  Hoffmann,  Germany  The  demands  of  patients  on  dentistry  have  changed  considerably.  A  beautiful  smile  is  increasingly  important  in  society.    In  doing  so,  more  and  more  emphasis  is  placed  on  minimally  invasive  and  substance-conserving  procedures.  Preprosthetic  pretreatment,  eg  with  orthodontic  alignment  or  gingiva  contouring,  enables  a  substance-conserving  treatment  even  in  poor  starting  situation.  No  prep  /  prepless  veneers  are  an  excellent  treatment  option  to  meet  such  requirements.    Key  factors  for  success  include  right  treatment  planning,  case  selection,  material  selection,  bonding  procedure  and,  in  particular,  collaboration  between  dentist  and  technician  to  minimize  risks  and  avoid  problems.  
+
+14.20  -  14.40  
+Make  it  easy!  A  concept  in  Aesthetic  Dentistry!  Dr.  Alina  Lazar,  Germany    Either  wecan  handle  difficult  cases  orwecan  turn  these  difficult  cases  in  easy  cases  by  Progressive  Smile  Design.  The  concept  Aligner  Bleaching  Bonding  -ABB  makes  it  easier  to  achieve  a  high-quality  result.  Whether  the  ABB  concept,  Aligner  whitening  veneers  or  Non-prep  veneers  are  used,  depends  onthe  case.  There  are  so  many  factors  that  play  an  important  role  from  the  beginning  to  the  end  of  a  job,  from  planning  multidisciplinary  to  knowing  what  is  better,  what  is  feasible.    Cosmetic  dentistry  is  a  team  work!  Competence,  Respect,  Communication,  Trust  and  of  course  fun  at  work  are  announced  here!  
+
+14.40  -  15.00  
+"The  correct  communication  to  the  patient  through  the  use  of  digital  photographs:  an  innovative  approach"Dr.  Roberto  Favero,  ItalyWe  consult  the  doctor  for  the  most  varied  problems  and  in  all  cases  we  hope  that  he  can  solve  our  disorder  orat  least  tell  us  what  is  afflicting  us  and  make  a  little  ''clarity  about  what  we  can  do.  Wewant  you  to  have  the  necessary  skills,  but  also  to  listen  and  understand  us.  A  relationship  of  trust  is  established  if  good  communication  exists  and  communication  between  doctor  and  patient,  weknow,  has  always  been  complicated.  Doctors  are  convinced  that  communicating  clearly  translates  into  the  use  of  technical  terminology,  because  for  them  itis  more  accurate  and  comprehensive  and  because  often  there  are  no  equivalent  terms  available.  Furthermore,  communication  often  occurs  with  a  quantity  of  information  such  that  patients  can  hardly  process.  Itis  therefore  opportune  to  use  communication  strategies  that  allow  usto  better  observe  and  understand  ourinterlocutor  more  deeply.  The  physician  should  combine  classical  language  with  an  evocative  language  using  anecdotes,  metaphors,  supported  by  photographic  images.  Which  narrative  scheme  to  follow  and  which  images  to  use?  Those  of  the  same  patient  oran  ideal  person?  Color  images,  in  black  and  white,  contextualized  or  not?  Static or  dynamic  images?  These  are  some  of  the  questions  we  will  try  to  answer.', '3', '');
+INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('999', '3', '999');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('999', '999', '999');
+
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('999', 'Jan Kurtz Hoffmann & Dr. Alina  Lazar & Dr. Roberto  Favero,', 'Jan Kurtz Hoffmann', '', '', '3', '');
+
 
 
 
@@ -917,14 +956,14 @@ Session Chairpersons: Dr. Seppo Lindroos & Dr. Daniel Baketic', '3', '1');
 
 /* 4 - Coffee Break */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('4', '4', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('4', '16:00', '16:30', '', '1', 'Coffee Break', '4', '4');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('4', '16:00', '16:30', '', '1', 'Coffee Break', '', '4');
 
 /* 5 - Dr. Pablo Santoro */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('5', '5', '46');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('5', '16:30', '17:30', '1', '2', 'Posterior Resins - Present, Past and Future.
 Session Chairpersons: Dr. Luca Dalloca & Dr. Karl Schwaninger', '5', '1');
 
-/* 6 - Dr. Raquel Zita */
+/* 6 - Dr. Raquel Zita Gomes */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('6', '6', '45');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('6', '16:30', '17:30', '1', '2', 'The foundation of aesthetic in implant dentistry: from Red to White.
 Session Chairpersons: Dr. Wolfgang Richter & Dr. Maria Csillag', '6', '1');
@@ -932,7 +971,7 @@ Session Chairpersons: Dr. Wolfgang Richter & Dr. Maria Csillag', '6', '1');
 /* 7 - ESCD Certification */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('7', '7', '');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('7', '16:30', '19:00', '3', '2', 'ESCD Certification.
-Session Chairpersons: Dr. Verena Nizic, Dr. Mauro Bazzoli, Dr. Igor Ristic, Dr. Attilio Muscio, Dr. Gregory Brambila & DT Przemek Seweryniak', '7', '2');
+Session Chairpersons: Dr. Verena Nizic, Dr. Mauro Bazzoli, Dr. Igor Ristic, Dr. Attilio Muscio, Dr. Gregory Brambila & DT Przemek Seweryniak', '', '2');
 
 /* 8 - Dr. Luca Tacchini */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('8', '8', '38');
@@ -972,9 +1011,9 @@ INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name,
 Session Chairpersons: Dr. Teresa Szupiany', '14', '2');
 
 /* 15 - Prof. Dr. Andre Saadoun */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('15', '15', '20');
+/*INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('15', '15', '20');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('15', '09:00', '11:00', '4', '5', 'Soft Tissue Management around Teeth and Implants
-Session Chairpersons: Dr. Gregory Camaleonte', '15', '2');
+Session Chairpersons: Dr. Gregory Camaleonte', '15', '2');*/
 
 /* 16 - Prof. Dr. Rafael Decurcio */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('16', '16', '13');
@@ -988,111 +1027,223 @@ Session Chairpersons: Dr. Antonio Olivo  & Dr. Bogdan Culic', '17', '2');
 
 /* 18 - Coffee Break */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('18', '18', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('18', '11:00', '11:30', '', '5', 'Coffee Break', '18', '4');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('18', '11:00', '11:30', '', '5', 'Coffee Break', '', '4');
 
 /* 19 - Eric Van Dooren & Dr. Nuno Sousa Dias */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('19', '19', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('19', '19', '33');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('19', '11:30', '13:00', '1', '6', 'Team approach in challenging aesthetic compromised cases
 Session Chairpersons: Dr. Selim Pamuk & Dr. Kleanthis Manolakis', '19', '1');
 
 /* 20 - Dr. Giuseppe Chiodera */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('20', '20', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('20', '20', '777');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('20', '11:30', '13:00', '2', '6', 'Direct posterior restorations from diagnosis to essential lines
 Session Chairpersons: Dr. Antonio Olivo & Dr. Bogdan Ciulic', '20', '1');
 
 /* 21 - Prof. Dr. Liu Feng */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('21', '21', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('21', '21', '16');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('21', '11:30', '13:00', '3', '6', 'From Digital guided immediate implant placement to esthetic chairside restoration
 Session Chairpersons: Dr. Teresa Szupiany', '21', '2');
 
 /* 22 - Prof. Dr. Andre Saadoun */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('22', '22', '');
+/*INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('22', '22', '20');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('22', '11:30', '13:00', '4', '6', 'Soft Tissue Management around Teeth and Implants
-Session Chairpersons: Dr. Gregory Camaleonte', '22', '2');
+Session Chairpersons: Dr. Gregory Camaleonte', '22', '2');*/
 
 /* 23 - ESCD Board Meeting */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('23', '23', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('23', '11:30', '13:00', '5', '6', 'ESCD Board Meeting', '23', '2');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('23', '11:30', '13:00', '5', '6', 'ESCD Board Meeting', '', '2');
 
 /* 24 - Lunch */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('24', '24', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('24', '13:00', '14:00', '', '6', 'Lunch', '24', '4');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('24', '13:00', '14:00', '', '6', 'Lunch', '', '4');
 
 /* 25 - Dr. Roberto Rossi */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('25', '25', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('25', '25', '11');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('25', '14:00', '15:00', '1', '7', 'Esthetic Crown Lenghtening - the role of the periodontist in creating a beautiful smile
 Session Chairpersons: Dr. Mauro Bazzoli & Dr. Marco Nicastro', '25', '1');
 
 /* 26 - Dr. Louis Hardan */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('26', '26', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('26', '26', '25');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('26', '14:00', '15:00', '2', '7', 'Dental documentation and communication: a new easy way for everyone, every day
 Session Chairpersons: Dr. Verena Nizic & Dr. Igor Ristic', '26', '1');
 
-/* 27 - Dr.Paulo Monteiro */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('27', '27', '');
+/* 27 - Dr. Paulo Monteiro */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('27', '27', '41');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('27', '14:00', '16:00', '3', '7', 'Simple direct composite restorations in anterior teeth 
 Session Chairpersons: Dr. Kamila Azimova', '27', '2');
 
 /* 28 - Dr. Walter Renne */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('28', '28', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('28', '28', '22');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('28', '14:00', '16:00', '4', '7', 'How to create a pre-surgical provisional restoration from an implant plan 
 Session Chairpersons: Dr. Daniel Baketic', '28', '2');
 
 /* 29 - Dr. Giuseppe Chiodera */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('29', '29', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('29', '29', '1');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('29', '14:00', '16:00', '5', '7', 'Essential lines developed by Style Italiano, modern approach for creating aesthetic posterior restoration using 3M Bulk Fill material 
 Session Chairpersons: Dr. Natasa Zeptic', '29', '2');
 
 /* 30 - Dr. Javier Tapia */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('30', '30', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('30', '30', '42');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('30', '15:00', '16:00', '1', '7', 'Emulation of teeth ageing with composite resin: challenges and feasibility 
 Session Chairpersons: Dr. Mauro Bazzoli & Dr. Marco Nicastro', '30', '1');
 
 /* 31 - Dr. Juan Arias */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('31', '31', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('31', '31', '2');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('31', '15:00', '16:00', '2', '7', 'Aesthetics procedures in compromise implant situations: The aesthetic zone 
 Session Chairpersons: Dr. Verena Nizic & Dr. Igor Ristic', '31', '1');
 
 /* 32 - Coffee break */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('32', '32', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('32', '16:00', '16:30', '', '7', 'Coffee break', '32', '4');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('32', '16:00', '16:30', '', '7', 'Coffee break', '', '4');
 
 /* 33 - Dr. Jordi Manauta */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('33', '33', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('33', '33', '6');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('33', '16:30', '18:00', '1', '8', 'Styleitaliano Tips and Tricks 
 Session Chairpersons: Dr. Mauro Bazzoli & Dr. Marco Nicastro', '33', '1');
 
 /* 34 - Dr. Diana Boangar */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('34', '34', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('34', '34', '24');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('34', '16:30', '17:15', '2', '8', 'Ortho-prosthetics interdisciplinary; from planning to execution 
 Session Chairpersons: Dr. Verena Nizic & Dr. Igor Ristic', '34', '1');
 
 /* 35 - Dr. Roberto Rossi */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('35', '35', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('35', '35', '12');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('35', '16:30', '19:00', '3', '8', 'The art of crown lengthening'' and feature the surgery in the Esthetic zone 
 Session Chairpersons: Dr. Kamila Azimova', '35', '2');
 
 /* 36 - Dr. Louis Hardan */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('36', '36', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('36', '36', '26');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('36', '16:30', '19:00', '4', '8', 'Documenting and communicating with mobile dental photography: all you need to know 
 Session Chairpersons: Dr. Daniel Baketic', '36', '2');
 
 /* 37 - ESCD Chairperson Meeting */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('37', '37', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('37', '16:30', '19:00', '5', '8', 'ESCD Chairperson Meeting', '37', '2');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('37', '16:30', '19:00', '5', '8', 'ESCD Chairperson Meeting', '', '2');
 
 /* 38 - Dr. Alecsandru Ionescu */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('38', '38', '');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('38', '38', '23');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('38', '17:15', '18:00', '2', '8', 'The Biological Guided Approach for predictable long term esthetic and functional results in implant patients 
 Session Chairpersons: Dr. Verena Nizic & Dr. Igor Ristic', '38', '1');
 
 /* 39 - Prof. Dr. Liu Feng */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('39', '39', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('39', '18:15', '19:00', '1', '8', 'To establish or to maintain Strategies for pink esthetics in implants 
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('39', '39', '15');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('39', '18:00', '19:00', '1', '8', 'To establish or to maintain Strategies for pink esthetics in implants 
 Session Chairpersons: Dr. Mauro Bazzoli & Dr. Marco Nicastro', '39', '1');
 
 /* 40 - Dr. Joao Barbosa */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('40', '40', '');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('40', '18:15', '19:00', '2', '8', 'Digital Biomimetics: "Nature Copy / Nature Paste" 
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('40', '40', '28');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('40', '18:00', '19:00', '2', '8', 'Digital Biomimetics: "Nature Copy / Nature Paste" 
 Session Chairpersons: Dr. Verena Nizic & Dr. Igor Ristic', '40', '1');
+
+
+/*================== DAY 3 ===============================
+/* 41 - Dr. Mauro Fradeani */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('41', '41', '18');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('41', '09:00', '11:00', '1', '9', 'The prosthetic revolution
+Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '41', '1');
+
+/* 41 - Dr. Walter Renne */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('200', '200', '22');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('200', '09:00', '11:00', '1', '9', 'The prosthetic revolution
+Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '200', '1');
+
+/* 42 - Dr. Joao Fonseca */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('42', '42', '34');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('42', '09:00', '10:00', '2', '9', 'This computer has no Brain, use your own
+Session Chairpersons: Dr. Natasa Zepic & Dr. Sinisa Kovacevic', '42', '1');
+
+/* 43 - Jon Gurrea */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('43', '43', '14');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('43', '10:00', '11:00', '2', '9', 'Simplified oral adhesive rehabilitation
+Session Chairpersons: Dr. Natasa Zepic & Dr. Sinisa Kovacevic', '43', '1');
+
+/* 44 - Coffee Break */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('44', '44', '');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('44', '11:00', '11:30', '', '9', 'Coffee Break', '', '4');
+
+/* 45 - Eva Berroeta */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('45', '45', '10');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('45', '11:30', '13:00', '1', '10', 'Erosive patients - how to treat them from the beginning to the end
+Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '45', '1');
+
+/* 46 - Cosmin Dima */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('46', '46', '47');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('46', '11:30', '12:15', '1', '10', 'Sinus lifting - everything from detailed anatomy to very complex clinical cases
+Session Chairpersons: Dr. Natasa Zepic & Dr. Sinisa Kovacevic', '46', '1');
+
+/* 47 - ESCD General Assembly */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('47', '47', '');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('47', '11:30', '13:00', '4', '10', 'ESCD General Assembly', '', '2');
+
+/* 48 - Prof. Dr. Andre Saadoun */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('48', '48', '19');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('48', '12:15', '13:00', '2', '10', 'Partial extraction therapy and immediate / delayed implant
+Session Chairpersons: Dr. Natasa Zepic & Dr. Sinisa Kovacevic', '48', '1');
+
+/* 49 - Lunch Break */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('49', '49', '');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('49', '13:00', '14:00', '', '10', 'Lunch Break', '', '4');
+
+/* 50 - Dr. Miguel Stanley */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('50', '50', '7');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('50', '14:00', '15:00', '1', '11', 'The Digital Smile Make over
+Session Chairpersons: Dr. Igor Ristic & Dr. Joao Pimenta', '50', '1');
+
+/* 51 - Dr. Dan Herschbach */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('51', '51', '35');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('51', '14:00', '15:00', '2', '11', 'My digital reality - how technology changes the way we practice
+Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '51', '1');
+
+/* 52 - Dr. Javier Tapia Guadix */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('52', '52', '43');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('52', '14:00', '16:00', '3', '11', 'Live Demo Essentia: the smart simplification of direct composite restorations
+Session Chairpersons: Dr. Alexandr Kozhemiak', '52', '2');
+
+/* 53 - ESCD Member Pearls */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('53', '53', '999');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('53', '14:00', '15:00', '4', '11', 'ESCD Member Pearls', '53', '3');
+
+/* 54 - Dr. Maciej Zarrow */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('54', '54', '32');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('54', '15:00', '16:00', '1', '11', 'The restoration of root canal treated anterior teeth - ABC for the clinical practive
+Session Chairpersons: Dr. Igor Ristic & Dr. Joao Pimenta', '54', '1');
+
+/* 55 - Dr. Walter Renne */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('55', '55', '21');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('55', '15:00', '16:00', '1', '11', 'Pre-surgical provisional prosthetics in the esthetic zone
+Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '55', '1');
+
+/* 56 - Coffee Break */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('56', '56', '');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('56', '16:00', '16:30', '', '11', 'Coffee Break', '', '4');
+
+/* 57 - Prof. Dr. Nitzan Bichacho & Dr. Mirela Feraru */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('57', '57', '3');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('57', '16:30', '18:00', '1', '12', 'Managing the perio-restorative interface of different abutment types in the smile zone - Concepts and strategies
+Session Chairpersons: Dr. Igor Ristic & Dr. Joao Pimenta', '57', '1');
+
+/* 58 - Dr. Sascha Hein */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('58', '58', '4');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('58', '16:30', '17:30', '2', '12', '"eLAB" - A new dawn in shade matching
+Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '58', '1');
+
+/* 59 - Dr. George Gomez */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('59', '59', '29');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('59', '16:30', '18:30', '2', '12', '3M Modern Cementation techniques choosing an appropiate cement for indirect dental restorations, from self-etching cements to adhesive cementation
+Session Chairpersons: Dr. Alexandr Kozhemiak', '59', '2');
+
+/* 60 - Dr. Pedro Brito */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('60', '60', '48');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('60', '17:30', '18:00', '2', '12', 'Digital revolution - The other side of art
+Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '60', '1');
+
+/* 61 - Dr. Giuseppe Romeo */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('61', '61', '5');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('61', '18:00', '19:00', '2', '12', 'Technical Diagnostic and Esthetical Approach
+Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '61', '1');
+
+/* 62 - Congress Closing Ceremony */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('62', '62', '');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('62', '19:00', '19:00', '', '12', 'Congress Closing Ceremony', '', '4');
+
 

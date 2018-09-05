@@ -18,13 +18,15 @@ final class MapCell: UITableViewCell {
         scrollView.delegate = self
         
         scrollView.contentSize = (mapImageView.image?.size)!
-        scrollView.setZoomScale(0.5, animated: true)
+        scrollView.setZoomScale(0.7, animated: true)
         scrollView.maximumZoomScale = 3.0
-        scrollView.minimumZoomScale = 0.4
+        scrollView.minimumZoomScale = 0.5
+        
+        adjust()
     }
     
     func adjust() {
-        scrollView.setZoomScale(0.5, animated: true)
+        scrollView.setZoomScale(0.7, animated: true)
         scrollView.sizeToFit()
     }
 }

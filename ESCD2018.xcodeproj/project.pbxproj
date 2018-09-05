@@ -14,6 +14,8 @@
 		C84F0842208897DD00241AD6 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F0841208897DD00241AD6 /* ScheduleViewController.swift */; };
 		C84F084E20889D5A00241AD6 /* BaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F084D20889D5A00241AD6 /* BaseHeaderView.swift */; };
 		C84F08502088A1D500241AD6 /* BaseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F084F2088A1D500241AD6 /* BaseHeaderView.xib */; };
+		C854FD2B21400A9000266305 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854FD2A21400A9000266305 /* VenueCell.swift */; };
+		C854FD2D21400A9C00266305 /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C854FD2C21400A9C00266305 /* VenueCell.xib */; };
 		C860C11A212D72A0007E8F08 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860C117212D72A0007E8F08 /* DBManager.swift */; };
 		C860C11B212D72A0007E8F08 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860C118212D72A0007E8F08 /* SQLTable.swift */; };
 		C860C11C212D72A0007E8F08 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860C119212D72A0007E8F08 /* SQLiteDB.swift */; };
@@ -81,6 +83,8 @@
 		C84F0841208897DD00241AD6 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		C84F084D20889D5A00241AD6 /* BaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeaderView.swift; sourceTree = "<group>"; };
 		C84F084F2088A1D500241AD6 /* BaseHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseHeaderView.xib; sourceTree = "<group>"; };
+		C854FD2A21400A9000266305 /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		C854FD2C21400A9C00266305 /* VenueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
 		C860C117212D72A0007E8F08 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = ESCD2018/DBManager.swift; sourceTree = SOURCE_ROOT; };
 		C860C118212D72A0007E8F08 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLTable.swift; path = ESCD2018/SQLTable.swift; sourceTree = SOURCE_ROOT; };
 		C860C119212D72A0007E8F08 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = ESCD2018/SQLiteDB.swift; sourceTree = SOURCE_ROOT; };
@@ -184,8 +188,8 @@
 		C84F084C20889D4B00241AD6 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
-				C84F084D20889D5A00241AD6 /* BaseHeaderView.swift */,
 				C84F084F2088A1D500241AD6 /* BaseHeaderView.xib */,
+				C84F084D20889D5A00241AD6 /* BaseHeaderView.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -243,6 +247,8 @@
 				C86CEB5C209C76BA004B2000 /* SponsorSectionHeader.swift */,
 				C86CEB60209E0BA6004B2000 /* MapCell.swift */,
 				C86CEB62209E0BB1004B2000 /* MapCell.xib */,
+				C854FD2A21400A9000266305 /* VenueCell.swift */,
+				C854FD2C21400A9C00266305 /* VenueCell.xib */,
 			);
 			path = Sponsors;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				C86CEB63209E0BB1004B2000 /* MapCell.xib in Resources */,
 				C86CEB5B209C7657004B2000 /* SponsorSectionHeader.xib in Resources */,
 				C8FF70A0207F916F00CEBB2D /* Assets.xcassets in Resources */,
+				C854FD2D21400A9C00266305 /* VenueCell.xib in Resources */,
 				C8C4F12B2083A60500746BF5 /* SpeakerDetailsCell.xib in Resources */,
 				C8214BF320A225770079165F /* bell.mp3 in Resources */,
 				C84F08502088A1D500241AD6 /* BaseHeaderView.xib in Resources */,
@@ -502,6 +509,7 @@
 				C867A22F209F394900BF1578 /* SegueIdentifiers.swift in Sources */,
 				C8C6E6DB209B378C00593E14 /* ExhibitionViewController.swift in Sources */,
 				C86CEB5F209DE076004B2000 /* ScheduleDetailsViewController.swift in Sources */,
+				C854FD2B21400A9000266305 /* VenueCell.swift in Sources */,
 				C8C4F1292083A5F700746BF5 /* SpeakerDetailsCell.swift in Sources */,
 				C8E3CFEF2089B9A6000CE1FA /* ScheduleCell.swift in Sources */,
 				C8FF70BB207F926D00CEBB2D /* Tools.swift in Sources */,
@@ -669,7 +677,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.SSER2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.ESCD2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ESCD2018/ESCD2018-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -691,7 +699,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.SSER2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.ESCD2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ESCD2018/ESCD2018-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

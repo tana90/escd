@@ -21,19 +21,17 @@
                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="99" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="kF9-BV-gVR">
                         <rect key="frame" x="0.0" y="0.0" width="367" height="506"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schita" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-iG-aeD">
-                                <rect key="frame" x="0.0" y="0.0" width="1037" height="703"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="703" id="Yoe-R9-bj2"/>
-                                    <constraint firstAttribute="width" constant="1037" id="fPe-ma-TC0"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exhibition" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-iG-aeD">
+                                <rect key="frame" x="0.0" y="0.0" width="367" height="506"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="tdP-iG-aeD" firstAttribute="leading" secondItem="kF9-BV-gVR" secondAttribute="leading" id="7Om-qS-JRV"/>
-                            <constraint firstItem="tdP-iG-aeD" firstAttribute="top" secondItem="kF9-BV-gVR" secondAttribute="top" id="TW5-sL-Tfu"/>
-                            <constraint firstAttribute="bottom" secondItem="tdP-iG-aeD" secondAttribute="bottom" constant="-197" id="UQ1-tA-BJ1"/>
-                            <constraint firstAttribute="trailing" secondItem="tdP-iG-aeD" secondAttribute="trailing" constant="-670" id="ZJW-ya-mgd"/>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="leading" secondItem="kF9-BV-gVR" secondAttribute="leading" id="2w9-aq-dJV"/>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="centerY" secondItem="kF9-BV-gVR" secondAttribute="centerY" id="E28-sc-PWl"/>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="top" secondItem="kF9-BV-gVR" secondAttribute="top" id="LZ1-ef-nPv"/>
+                            <constraint firstAttribute="bottom" secondItem="tdP-iG-aeD" secondAttribute="bottom" id="fRp-In-hKR"/>
+                            <constraint firstAttribute="trailing" secondItem="tdP-iG-aeD" secondAttribute="trailing" id="jGz-jj-hCn"/>
+                            <constraint firstItem="tdP-iG-aeD" firstAttribute="centerX" secondItem="kF9-BV-gVR" secondAttribute="centerX" id="zZU-qm-to4"/>
                         </constraints>
                     </scrollView>
                 </subviews>
@@ -44,7 +42,7 @@
                     <constraint firstItem="kF9-BV-gVR" firstAttribute="centerX" secondItem="IQ8-X5-0uk" secondAttribute="centerX" id="PHN-ES-PfP"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.027450980390000001" green="0.035294117649999998" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="mapImageView" destination="tdP-iG-aeD" id="MHX-NH-GK9"/>
                 <outlet property="scrollView" destination="kF9-BV-gVR" id="o66-qJ-xlr"/>
@@ -53,6 +51,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="schita" width="7483" height="5291"/>
+        <image name="exhibition" width="3859" height="5106"/>
     </resources>
 </document>

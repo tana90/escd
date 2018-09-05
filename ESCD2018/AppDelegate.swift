@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         token = token.replacingOccurrences(of: ">", with: "")
         token = token.replacingOccurrences(of: " ", with: "")
 
-        var request = URLRequest(url: URL(string: String(format: "http://activa.ro/sser/app18.php?deviceid=%@", token))!)
+        var request = URLRequest(url: URL(string: String(format: "https://activa.ro/sser/app18devices-escd.php?deviceid=%@", token))!)
         request.httpMethod = "GET"
         let session = URLSession.shared
         

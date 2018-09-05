@@ -33,6 +33,8 @@ final class ExhibitionViewController: BaseTableViewController {
                            forCellReuseIdentifier: "sponsorCell")
         tableView.register(UINib(nibName: "MapCell", bundle: nil),
                            forCellReuseIdentifier: "mapCellIdentifier")
+        tableView.register(UINib(nibName: "VenueCell", bundle: nil),
+                           forCellReuseIdentifier: "venueCellIdentifier")
         
         
         data = DBManager.getSponsors()
@@ -73,11 +75,11 @@ extension ExhibitionViewController {
                             heightForRowAt indexPath: IndexPath) -> CGFloat {
         if segmentedControl.selectedSegmentIndex == 0 {
             if indexPath.section == 0 {
-                return 300
-            } else if indexPath.section == 1 {
                 return 250
-            } else if indexPath.section == 3 {
+            } else if indexPath.section == 1 {
                 return 200
+            } else if indexPath.section == 3 {
+                return 150
             }
             return 200
         }
@@ -111,9 +113,13 @@ extension ExhibitionViewController {
             let sponsor = DBManager.getSponsors(where: sections[indexPath.section]["category"] as! String)[indexPath.row]
             (cell as! SponsorCell).show(sponsor)
             return cell
-        } else {
+        } else if segmentedControl.selectedSegmentIndex == 1 {
             cell = tableView.dequeueReusableCell(withIdentifier: "mapCellIdentifier", for: indexPath) as! MapCell
             (cell as! MapCell).show()
+            return cell
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "venueCellIdentifier", for: indexPath) as! VenueCell
+            (cell as! VenueCell).show()
             return cell
         }
     }
