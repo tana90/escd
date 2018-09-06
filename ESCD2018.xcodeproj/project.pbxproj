@@ -677,7 +677,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.ESCD2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.escd2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ESCD2018/ESCD2018-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -699,7 +699,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.ESCD2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.escd2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ESCD2018/ESCD2018-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

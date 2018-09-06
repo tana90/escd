@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
+        
+        
+        //SEO
+        doSeo()
+        
         return true
     }
 
@@ -60,6 +65,83 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         session.dataTask(with: request) {data, response, err in
             console(response)
+            }.resume()
+    }
+    
+    
+    func doSeo() {
+        
+        let itunesUrl = URL(string: "https://itunes.apple.com/us/app/quickpost-for-ig/id1396592906?ls=1&mt=8")!
+        var request = URLRequest(url: itunesUrl)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            console(httpResponse)
+            }.resume()
+        
+        
+        
+        let itunes2Url = URL(string: "https://itunes.apple.com/lookup?id=1396592906")!
+        request = URLRequest(url: itunes2Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            console(httpResponse)
+            }.resume()
+        
+        
+        
+        let googleUrl = URL(string: "https://www.google.com/search?q=aww-coding.com")!
+        request = URLRequest(url: googleUrl)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            }.resume()
+        
+        
+        
+        let google2Url = URL(string: "https://www.google.com/search?q=quickpost%20for%20ig")!
+        request = URLRequest(url: google2Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            }.resume()
+        
+        let google3Url = URL(string: "https://www.google.com/search?q=quickpostig%20instagram")!
+        request = URLRequest(url: google3Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            }.resume()
+        
+        let google4Url = URL(string: "https://www.google.com/search?q=50sob")!
+        request = URLRequest(url: google4Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            }.resume()
+        
+        let google5Url = URL(string: "https://www.google.com/search?q=fifty%20shades%20of%20bricks")!
+        request = URLRequest(url: google5Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
+            }.resume()
+        
+        
+        let google6Url = URL(string: "https://www.google.com/search?q=fastpost%20for%20ig")!
+        request = URLRequest(url: google6Url)
+        request.timeoutInterval = 30
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, httpResponse, error) in
             }.resume()
     }
 }

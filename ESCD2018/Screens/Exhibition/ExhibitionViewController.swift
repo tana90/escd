@@ -75,13 +75,13 @@ extension ExhibitionViewController {
                             heightForRowAt indexPath: IndexPath) -> CGFloat {
         if segmentedControl.selectedSegmentIndex == 0 {
             if indexPath.section == 0 {
-                return 250
+                return 300
             } else if indexPath.section == 1 {
-                return 200
-            } else if indexPath.section == 3 {
+                return 250
+            } else if indexPath.section == 2 {
                 return 150
             }
-            return 200
+            return 120
         }
         return tableView.frame.size.height
     }

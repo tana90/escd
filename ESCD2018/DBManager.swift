@@ -18,7 +18,7 @@ final class DBManager {
     }
     
     static func getAllSpeakers() -> [DefaultDictionary] {
-        return SQLiteDB.shared.query(sql: "SELECT * FROM Speakers")
+        return SQLiteDB.shared.query(sql: "SELECT * FROM Speakers ORDER BY firstName ASC")
     }
     
     static func getSpeakers(where type: Int) -> [DefaultDictionary] {
@@ -28,6 +28,7 @@ final class DBManager {
             INNER JOIN SpeakerTypeMap ON Speakers.objectId = SpeakerTypeMap.speakerId
             INNER JOIN SpeakerTypes ON SpeakerTypeMap.typeId = SpeakerTypes.objectId
             WHERE SpeakerTypes.objectId = '%ld'
+            ORDER BY firstName ASC
             """, type)
         return SQLiteDB.shared.query(sql: query)
     }

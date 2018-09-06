@@ -29,10 +29,10 @@ class MainViewController: UIViewController {
         }
         
         
-        if UI_USER_INTERFACE_IDIOM() == .pad {
-            locationLabel.textColor = .black
-            sublocationLabel.textColor = .black
-        }
+//        if UI_USER_INTERFACE_IDIOM() == .pad {
+//            locationLabel.textColor = .black
+//            sublocationLabel.textColor = .black
+//        }
     }
 }
 

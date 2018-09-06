@@ -4,23 +4,26 @@
 DELETE FROM Sponsors;
 
 /* Platinum sponsor */
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Planmeca', 'planmeca.jpg', 'https://www.planmeca.com', 'Platinum Sponsor', '1');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('3M', '3m.jpg', 'https://www.3m.com.es/3M/es_ES/empresa-es/', 'Platinum Sponsor', '1');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Planmeca', 'planmeca.png', 'https://www.planmeca.com', 'Platinum Sponsors', '1');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('3M', '3m.png', 'https://www.3m.com.es/3M/es_ES/empresa-es/', 'Platinum Sponsors', '1');
 
 /* Gold sponsor */
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Dentsply Sirona', 'dentsply.jpg', 'https://www.dentsplysirona.com/es-ib', 'Gold Sponsor', '2');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('ROCS', 'rocs.jpg', 'http://www.rocsinfo.com', 'Gold Sponsor', '2');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Mis Portugal', 'mis.jpg', 'https://www.mis-implants.com/International/PT.aspx', 'Gold Sponsor', '2');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('DMG', 'dmg.jpg', 'https://www.dmg-dental.com/en/home/', 'Gold Sponsor', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Dentsply Sirona', 'dentsply.png', 'https://www.dentsplysirona.com/es-ib', 'Gold Sponsors', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('ROCS', 'rocs.png', 'http://www.rocsinfo.com', 'Gold Sponsors', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Mis Portugal', 'mis.png', 'https://www.mis-implants.com/International/PT.aspx', 'Gold Sponsors', '2');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('DMG', 'dmg.png', 'https://www.dmg-dental.com/en/home/', 'Gold Sponsors', '2');
 
 /* Silver sponsor */
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Coltene', 'coltene.jpg', 'https://www.coltene.com/pt/', 'Silver Sponsor', '3');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('GC', 'gc.jpg', 'https://www.gceurope.com', 'Silver Sponsor', '3');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Shofu', 'shofu.jpg', 'http://www.shofu.com', 'Silver Sponsor', '3');
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Voco', 'voco.jpg', 'https://www.voco.dental/en/home.aspx', 'Silver Sponsor', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Coltene', 'coltene.png', 'https://www.coltene.com/pt/', 'Silver Sponsors', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('GC', 'gc.png', 'https://www.gceurope.com', 'Silver Sponsors', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Shofu', 'shofu.png', 'http://www.shofu.com', 'Silver Sponsors', '3');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Voco', 'voco.png', 'https://www.voco.dental/en/home.aspx', 'Silver Sponsors', '3');
 
 /* Official car */
-INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Audi', 'audi.jpg', 'http://www.sivaonline.pt/Pages/Cubo.aspx', 'Official Car', '4');
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Audi', 'audi.png', 'http://www.sivaonline.pt/Pages/Cubo.aspx', 'Official Car', '4');
+
+/* Other sponsor */
+INSERT INTO Sponsors (name, picture, url, category, position) VALUES ('Turismo', 'turismo.png', 'https://www.visitlisboa.com/', 'Other Sponsors', '4');
 
 /*======================================================================================================*/
 
@@ -63,7 +66,7 @@ INSERT INTO ScheduleTypes (objectId, name) VALUES ('3', 'Saturday, 22 Sept');
 DELETE FROM Locations;
 
 INSERT INTO Locations (objectId, name) VALUES ('1', 'Auditorium I Conferences');
-INSERT INTO Locations (objectId, name) VALUES ('2', 'Auditorium II Conferences');
+INSERT INTO Locations (objectId, name) VALUES ('2', 'Auditorium III Conferences');
 INSERT INTO Locations (objectId, name) VALUES ('3', 'Room 1 Hands-on Session');
 INSERT INTO Locations (objectId, name) VALUES ('4', 'Room 2 Hands-on Session');
 INSERT INTO Locations (objectId, name) VALUES ('5', 'Room 5 Hands-on Session');
@@ -126,7 +129,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('778', '2', '77
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('778', '778', '777');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('777', 'Dr. Giuseppe Chiodera', 'Dr. Giuseppe Chiodera', 'chioderra.jpg', 'Graduated in Dentistry at the University of Brescia in 2004. In the same year
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('777', 'Dr. Giuseppe Chiodera', 'Chiodera', 'chioderra.jpg', 'Graduated in Dentistry at the University of Brescia in 2004. In the same year
 Winner Of a scholarship at Kings College University of London.
 Author and coauthor of articles in National and International journals . Style Italiano member .
 Speaker at National and international Conferences : about diagnosis , prevention , adhesive restorations ,bleaching , ozone , laser.
@@ -139,7 +142,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('2', '1', '1');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('2', '2', '1');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('1', 'Dr. Juan Arias', 'Dr. Juan Arias', 'Arias.jpg', 'Juan Arias.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('1', 'Dr. Juan Arias', 'Arias', 'Arias.jpg', 'Juan Arias.
 - Degree in Dentistry from the University of Madrid 2001.
 - Director of the Periodontal Advanced postgraduate program from the European
 University of Madrid
@@ -162,12 +165,12 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('4', '1', '3');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('4', '3', '3');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('2', 'Prof. Dr. Nitzan Bichacho ', 'Prof. Dr. Nitzan Bichacho ', 'nitzan bichacho.jpg', 'Prof. Nitzan Bichacho
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('2', 'Prof. Dr. Nitzan Bichacho ', 'Bichacho ', 'nitzan bichacho.jpg', 'Prof. Nitzan Bichacho
 Nitzan Bichacho, D.M.D. holds the post of expert in prosthodontics at the rank of professor, at the Faculty of Dental Medicine, Hebrew University, Jerusalem, Israel.
 He is Past President and a Life Member of the European Academy of Esthetic Dentistry (EAED). He also serves at the editorial boards of leading international dental journals.He is a co-inventor of the Nobel Active Implant System, the V3 implant system (MIS/Dentsply) and other techniques and systems that have become widely used around the world.
 Prof. Bichacho has been publishing and lecturing extensively worldwide in the fields of dental implant therapy, fixed prosthodontics, interdisciplinary treatments and innovative treatment modalities in esthetic dentistry.
 His private practice in Tel Aviv focuses on interdisciplinary treatments, where he collaborates with multinational master dental technicians.', '1', 'Israel');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('3', 'Dr. Mirela Feraru', 'Dr. Mirela Feraru', 'mirela feraru.jpg', 'Dr. Mirela Feraru
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('3', 'Dr. Mirela Feraru', 'Feraru', 'mirela feraru.jpg', 'Dr. Mirela Feraru
 Dr. Mirela Feraru graduated in 2005 from the Dental Faculty of the Timisoara University, Romania. 
 In 2009 she joined the Bichacho Clinic team in Tel Aviv, Israel and for the last 8 years Dr. Feraru has gained in-depth knowledge and experience in all fields of Perio-Prosthetic Aesthetic Dentistry, focusing on Restorative and Perioplastic surgery treatments. 
 She continues studying and participating in advanced programs and courses in the various fields of modern Perio-Prosthetics.
@@ -184,7 +187,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('5', '1', '4');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('5', '4', '4');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('4', 'Dt. Sascha Hein', 'Dt. Sascha Hein', 'Hein.jpg', '
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('4', 'Dt. Sascha Hein', 'Hein', 'Hein.jpg', '
 Sascha Hein
 Sascha Hein commenced his training in dental technology of Germany where he graduated in 1997. He then subsequently worked in a number of dental laboratories in Europe and the United Arab Emirates. In 2001 he completed further studies in dental ceramics under Masahiro Kuwata in Tokyo, Japan. In 2004/05 he attended Master School in Freiburg, Germany where he graduated top of school and won silver in the annual Kanter Award Competition which premiers Germanys top three Master School students. In 2007 Sascha Hein was inducted into the international Oral Design group by founder Willi Geller. Since 2011 he serves as editorial board member of the German Quintessence of Dental Technology. In 2012 he was inducted into the Bio-Emulation group, under which he conducted independent research, which lead to the development of the visual_eyes liquid and the fluor_eyes flash system for fluorescent dental photography. He lectures internationally and has authored numerous publications, including the 2009 and 2011 QDT Yearbook. After spending twelve years in Perth Western Australia, Sascha Hein returned to Freiburg, Germany where he now lives and works. ', '1', 'Germany');
 
@@ -205,7 +208,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('6', '1', '5');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('6', '5', '5');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('5', 'Dt. Giussepe Romeo', 'Dt. Giussepe Romeo', 'Giuseppe Romeo.jpg', 'Giuseppe Romeo is a Dental Technician with his own practice in Torino, Italy.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('5', 'Dt. Giussepe Romeo', 'Romeo', 'Giuseppe Romeo.jpg', 'Giuseppe Romeo is a Dental Technician with his own practice in Torino, Italy.
 Studied two years of University, receiving Master Degree in Dental Technologist Esthetic Prosthodontics. He completed his continuing education in Italy and abroad working in the United States and in Switzerland . Relator in Italy and abroad, he is still doing adjournment courses.
 Authored of 40 articles for important italian and worldwide magazines in dentistry as PPAD(Practical Procedures & Aesthetic Dentistry), JERD(Journal of Esthetic and Restorative Dentistry), Dental Dialogue, Realit Cliniques, QDT (Quintessence of Dental Technology), eLABORATE (Australia magazine), QJDT (Quintessence Journal of Dental Technology),
 Alta Tecnica Dental (Mexico) and The New Dental Laboratory Technician (Italian magazine), JACD (Journal of Academy Cosmetic Dentistry).
@@ -224,7 +227,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('7', '1', '6');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('7', '6', '6');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('6', 'Dr. Jordi Manauta', 'Dr. Jordi Manauta', 'manauta.jpg', 'Born in Mexico City, Jordi Manauta graduated with a degree in dentistry from the Technological University of Mexico (UNITEC) with major grants. He continued his postgraduate studies in operative and aesthetic dentistry, earning a masters degree from the International University of Catalonia (UIC) in Barcelona, Spain.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('6', 'Dr. Jordi Manauta', 'Manauta', 'manauta.jpg', 'Born in Mexico City, Jordi Manauta graduated with a degree in dentistry from the Technological University of Mexico (UNITEC) with major grants. He continued his postgraduate studies in operative and aesthetic dentistry, earning a masters degree from the International University of Catalonia (UIC) in Barcelona, Spain.
 
 He has developed and currently is developing various materials and instruments for aesthetic dentistry and photography in collaboration with international companies. He is visiting lecturer in Seville and Siena universities and scientific consultant for two European journals. Dr. Manauta is member of Styleitaliano group. Scientific consultant of two European journals, and he is author of the book Layers (Quintessence 2012) and Forma (in press) and is author and coauthor of many publications in international journals, Dr Manauta is frequently invited as a lecturer in these topics.', '1', 'Italy');
 
@@ -235,7 +238,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('8', '1', '7');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('8', '7', '7');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('7', 'Dr. Miguel Stanley', 'Dr. Miguel Stanley', 'Stanley.jpg', 'Dr. Miguel Stanley is a dental surgeon with a passion for complex oral rehabilitation, who has a team of highly specialized dentists that focus on everything from basic family dentistry to full mouth complex oral cosmetic rehabilitation. A trained implant surgeon and cosmetic dentist that graduated in 1998, Dr. Stanley has become a recognized opinion leader in the field of both cosmetic dentistry and complex implant surgery.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('7', 'Dr. Miguel Stanley', 'Stanley', 'Stanley.jpg', 'Dr. Miguel Stanley is a dental surgeon with a passion for complex oral rehabilitation, who has a team of highly specialized dentists that focus on everything from basic family dentistry to full mouth complex oral cosmetic rehabilitation. A trained implant surgeon and cosmetic dentist that graduated in 1998, Dr. Stanley has become a recognized opinion leader in the field of both cosmetic dentistry and complex implant surgery.
 
 For the past 15 years he has been lecturing around the world, sharing his passion for this field. In recent years, Dr Stanley has transitioned his practice and his team into the digital era. Today, he has a team entirely dedicated to the complete digital workflow in dentistry. He created the No Half Smiles philosophy and the Slow Dentistry concept. He is passionate about ethics and quality in dentistry. Dr Stanley loves to share his vision with the younger future generations of dentists around the world.
 
@@ -273,7 +276,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('10', '1', '9')
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('10', '8', '9');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('8', 'Dr. Gianfranco Politano ', 'Dr. Gianfranco Politano ', 'Gianfranco Politano.jpg', 'Gianfranco was born in 1971 in Crotone, Italy.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('8', 'Dr. Gianfranco Politano ', 'Politano ', 'Gianfranco Politano.jpg', 'Gianfranco was born in 1971 in Crotone, Italy.
 He finished dental school at Modena University, in the north of Italy
 Founder member of Bio-Emulation group with Dr. P. Bazos and Dr. J.T. Guadix
 Active member of S.I.D.O.C. : italian society of conservative dentistry
@@ -286,7 +289,7 @@ Gianfranco live and work in Rome.
 He focused on adhesive restorative dentistry and endodontic.
 He is an international lecturer and he published several articles about direct and indi- rect adhesive restorations', '1', 'Italy');
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('9', ' Dr. Marlenn Peumans', ' Dr. Marlenn Peumans', 'Marleen Peumans.jpg', 'Dr. Marleen Peumans
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('9', 'Dr. Marlenn Peumans', 'Peumans', 'Marleen Peumans.jpg', 'Dr. Marleen Peumans
 Was born on November 10, 1964, in Belgium. She obtained her degree in Dentistry in 1987 at the Catholic University of Leuven. Thereafter, she followed a 4-year post-graduate program at the Department of Operative Dentistry. She applied herself especially to the clinical use and the performance of anterior and posterior resin composites, bonded ceramic restorations, fibre-reinforced composite restorations and bleaching. She took part in numerous clinical studies concerning dentine adhesives, posterior composites, and ceramic veneers/inlays/onlays. In 1997 she obtained the degree of Doctor in Medical Sciences. From 2004 she became Professor at the Catholic University of Leuven. She has several national and international publications on her name concerning clinical performance of adhesive restorations and bleaching.', '1', 'Italy');
 
 
@@ -299,7 +302,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('11', '1', '10'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('11', '9', '10');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('10', 'Prof. Dr. Marius Steigmann', 'Prof. Dr. Marius Steigmann', 'steigmann.jpg', 'Dr. Steigmann is Adjunct Asistant Professor of oral and maxillofacial surgery Boston University. He is a Honorary Professor of the Carol Davila University of Bucharest, Visiting Professor at University of Szeged  Faculty of Dentistry, Visiting professor at Departament of Implantology in Temeschburg. Dr. Steigmann lectures and publishes extensively. Member of several association such as DGOI, FIZ, BDIZ and ICOI. He is a diplomate of the ICOI and other european societies. Dr. Steigmann also received the medal Semmelweiss Budapest University dental school departament of oral and naxillofacial surgery.', '1', 'Germany');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('10', 'Prof. Dr. Marius Steigmann', 'Steigmann', 'steigmann.jpg', 'Dr. Steigmann is Adjunct Asistant Professor of oral and maxillofacial surgery Boston University. He is a Honorary Professor of the Carol Davila University of Bucharest, Visiting Professor at University of Szeged  Faculty of Dentistry, Visiting professor at Departament of Implantology in Temeschburg. Dr. Steigmann lectures and publishes extensively. Member of several association such as DGOI, FIZ, BDIZ and ICOI. He is a diplomate of the ICOI and other european societies. Dr. Steigmann also received the medal Semmelweiss Budapest University dental school departament of oral and naxillofacial surgery.', '1', 'Germany');
 
 
 /* 9. Dr. Eva Berroeta */
@@ -312,7 +315,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('12', '1', '11'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('12', '10', '11');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('11', 'Dr. Eva Berroeta', 'Dr. Eva Berroeta', 'eva beroetta.jpg', 'Dr. Eva Berroeta has a degree in Dentistry at University of the Basque Country (1992-1997), a Masters Degree in Prosthodontics at Complutense University of
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('11', 'Dr. Eva Berroeta', 'Berroeta', 'eva beroetta.jpg', 'Dr. Eva Berroeta has a degree in Dentistry at University of the Basque Country (1992-1997), a Masters Degree in Prosthodontics at Complutense University of
 Madrid (1997-1999). Postgraduate course in Advanced Education in Prosthodontics at the University of Southern California (USC) (1999-2003).
 Dr. Berroeta is Visitor Professor on the Masters Degree in Periodontics at Complutense
 University of Madrid since 2003 and on the Masters Degree in Aesthetic
@@ -333,7 +336,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('14', '2', '12'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('14', '12', '12');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('12', 'Dr. Roberto Rossi', 'Dr. Roberto Rossi', 'Rossi.jpg', 'Dr.Rossi graduated in dentistry with honors in Genova and than specialized in Periodontology at Boston University Graduate School of Dental Medicine  in 1991. He received the M.Sc.D. in Periodontology in 1992 with his thesis published on the Journal of Periodontology
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('12', 'Dr. Roberto Rossi', 'Rossi', 'Rossi.jpg', 'Dr.Rossi graduated in dentistry with honors in Genova and than specialized in Periodontology at Boston University Graduate School of Dental Medicine  in 1991. He received the M.Sc.D. in Periodontology in 1992 with his thesis published on the Journal of Periodontology
 
 After returning to Italy he established a practice limited to Periodontology and Implant Dentistry.
 
@@ -351,7 +354,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('15', '1', '13'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('15', '13', '13');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('13', 'Dr. Rafael Decurcio', 'Dr. Rafael Decurcio', 'decurcio2.jpg', 'RAFAEL DECURCIO
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('13', 'Dr. Rafael Decurcio', 'Decurcio', 'decurcio2.jpg', 'RAFAEL DECURCIO
 Author of the book " Veneers: Contact Lenses and Ceramic Fragments" in portuguese and spanish / Editora Ponto
 Professor of the Specialization Course in Aesthetic Dentistry and Oral Rehabilitation /
 Brazilian Dental Association
@@ -368,7 +371,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('16', '1', '14'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('16', '14', '14');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('14', 'Dr. Jon Gurrea', 'Dr. Jon Gurrea', 'Gurrea.jpg', 'Dr. Jon Gurrea graduated in Dentistry in 2002 from Alfonso X el Sabio University, in Madrid, Spain.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('14', 'Dr. Jon Gurrea', 'Gurrea', 'Gurrea.jpg', 'Dr. Jon Gurrea graduated in Dentistry in 2002 from Alfonso X el Sabio University, in Madrid, Spain.
 International advanced study program in Periodontics (2003-2005), New York University College of Dentistry.
 Clinical Assistant Fellow in Periodontics (2004-2005), New York University College of Dentistry.
 Part-time faculty in the Implant Department in Alfonso X el Sabio University (2007-2008).
@@ -398,7 +401,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('18', '2', '15'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('18', '16', '15');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('15', 'Prof. Dr. Liu Feng', 'Prof. Dr. Liu Feng', 'feng.jpg', 'Dr. Feng LiuClinical Professor
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('15', 'Prof. Dr. Liu Feng', 'Feng', 'feng.jpg', 'Dr. Feng LiuClinical Professor
 
 Deputy director of Peking University Hospital of Stomatology Clinical Division ,
 Director of Clinical Division Esthetic Dentistry Training Center,
@@ -429,9 +432,9 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('19', '1', '16'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('19', '17', '16');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('16', 'Dr. Jorge André Cardoso', 'Dr. Jorge André', 'cardoso_pp.jpg', 'Dr. Jorge Andre Cardoso
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('16', 'Dr. Jorge André Cardoso', 'André', 'cardoso_pp.jpg', 'Dr. Jorge Andre Cardoso
 Dr. Cardoso is Doctor of Dental Medicine (DMD) by the Faculty of Dental Medicine  Porto University  2002. Master in Clinical Dentistry (MClinDent) in Prosthodontics by Kings College  London
-University  2010. Honorary Clinical Teacher at the Master of Science in Aesthetic Dentistry at Kings College  London University  since 2015.Author of several articles published in peer-reviewed journals such as the JERD, EJED and IJED. Author of four chapters in the book Practical Procedures in Aesthetic Dentistry  2017. Lecturer at several national an international events and courses in the fields of Esthetic, Restorative, Periodontal and Interdisciplinry Dentistry.Personality of the year in Oral Rehabilitation by Saude Oral Magazine, attributed by peer colleagues  2016. Teacher in Esthetic, Restorative, Periodontal and Interdisciplinary Dentistry in Sorriso Natural and Foramen teaching centers.Regular attendee of congresses and courses internationally. Developer of the software MakeMeClear (TM) ( www. makemeclear.com ) to help dentists communicate with patients with more clarity about treatment plans.', '1', '');
+University  2010. Honorary Clinical Teacher at the Master of Science in Aesthetic Dentistry at Kings College  London University  since 2015.Author of several articles published in peer-reviewed journals such as the JERD, EJED and IJED. Author of four chapters in the book Practical Procedures in Aesthetic Dentistry  2017. Lecturer at several national an international events and courses in the fields of Esthetic, Restorative, Periodontal and Interdisciplinry Dentistry.Personality of the year in Oral Rehabilitation by Saude Oral Magazine, attributed by peer colleagues  2016. Teacher in Esthetic, Restorative, Periodontal and Interdisciplinary Dentistry in Sorriso Natural and Foramen teaching centers.Regular attendee of congresses and courses internationally. Developer of the software MakeMeClear (TM) ( www. makemeclear.com ) to help dentists communicate with patients with more clarity about treatment plans.', '1', 'Portugal');
 
 
 /* 15. Dr. Mauro Fradeani */
@@ -440,7 +443,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('20', '1', '17'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('20', '18', '17');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('17', 'Dr. Mauro Fradeani', 'Dr. Mauro Fradeani', 'Fradeani.jpg', 'Dr. Mauro Fradeani 
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('17', 'Dr. Mauro Fradeani', 'Fradeani', 'Fradeani.jpg', 'Dr. Mauro Fradeani 
 Past President of the EAED-European Academy of Esthetic Dentistry (2003/2004) and Past President of AIOP- Accademia Italiana di Odontoiatria Protesica (1999/2000), Associate Editor of IJED, member of the Editorial Advisory Board of JERD, Active Member of the AAED, he maintains membership in the AAFP. Founder and Director of ACE Institute and of Fradeani EducationAuthor of the book "Esthetic Rehabilitation in Fixed Prosthodontics" Vol 1-"Esthetic Analysis" and Vol 2-"Prosthetic treatment: a systematic approach to esthetic, biologic and functional integration",  published by Quintessence. He runs a private practice limited to prosthetics on natural dentition and on implants in Pesaro (Italy).', '1', 'Italy');
 
 
@@ -461,7 +464,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('22', '2', '18'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('22', '20', '18');*/
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('18', 'Prof. Dr. Andre Saadoun', 'Prof. Dr. Andre Saadoun', 'ANDRE SAADOUN.jpg', 'Dr .SAADOUN has received his Degree in Dental Surgery from the Faculty of Paris and completed his Post-Graduate Certificate in Periodontology at the University of Pennsylvania and Post-Graduate Certificate in Implantology at University of California in Los Angeles.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('18', 'Prof. Dr. Andre Saadoun', 'Andre Saadoun', 'ANDRE SAADOUN.jpg', 'Dr .SAADOUN has received his Degree in Dental Surgery from the Faculty of Paris and completed his Post-Graduate Certificate in Periodontology at the University of Pennsylvania and Post-Graduate Certificate in Implantology at University of California in Los Angeles.
 
 He was an Associate Professor in the Department of Periodontics at the University of Southern California. He is also Visiting Professor at Loma Linda University and UCLA and also Visiting Professor at the Hadassah, Faculty of Dental Medicine of Jerusalem University.
 
@@ -496,7 +499,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('24', '2', '19'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('24', '22', '19');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('19', 'Dr. Walter Renne', 'Dr. Walter Renne', 'walter renne .jpg', 'Dr. Renne is a full Professor and Assistant Dean of Innovation and Digital Dentistry at the Medical University of South Carolina.  He is the course director for the preclinical CAD/CAM course. He has won several national and regional teaching awards for his efforts both pre-clinically and clinically. He is proficient clinically with the Planmeca Emerald, CEREC Omnicam, 3Shape Trios, CS 3600 and iTero element. He is active in dental research and currently has several patents including a patent for a platform of long-term antimicrobial dental materials that have revolutionary bond durability components by inhibiting enzyme degradation of the hybrid layer while simultaneously preventing bacterial proliferation. He has also published several studies on scan accuracy and milling accuracy using various systems.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('19', 'Dr. Walter Renne', 'Renne', 'walter renne .jpg', 'Dr. Renne is a full Professor and Assistant Dean of Innovation and Digital Dentistry at the Medical University of South Carolina.  He is the course director for the preclinical CAD/CAM course. He has won several national and regional teaching awards for his efforts both pre-clinically and clinically. He is proficient clinically with the Planmeca Emerald, CEREC Omnicam, 3Shape Trios, CS 3600 and iTero element. He is active in dental research and currently has several patents including a patent for a platform of long-term antimicrobial dental materials that have revolutionary bond durability components by inhibiting enzyme degradation of the hybrid layer while simultaneously preventing bacterial proliferation. He has also published several studies on scan accuracy and milling accuracy using various systems.
 ', '1', 'Usa');
 
 
@@ -509,7 +512,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('25', '1', '20'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('25', '23', '20');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('20', 'Dr. Alecsandru Ionescu', 'Dr. Alecsandru Ionescu', 'ionescu.jpg', 'Dr. Alecsandru Ionescu graduated the Faculty of Dentistry within UMF Carol Davila Bucharest in 2001. He is a member of the board of the Society for Esthetic Dentistry in Romania (SSER) as Events Director since 2004 and a member of the scientific board of Cosmetic Dentistry Romania since 2007. He is also the co-founder of Quintessence International Romania. Dr. Ionescu is an active member of the IADFE (International Academy for Dental-Facial Esthetics), ESCD (European Society of Esthetic Dentistry) and EAO (European Association for Osseointegration).
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('20', 'Dr. Alecsandru Ionescu', 'Ionescu', 'ionescu.jpg', 'Dr. Alecsandru Ionescu graduated the Faculty of Dentistry within UMF Carol Davila Bucharest in 2001. He is a member of the board of the Society for Esthetic Dentistry in Romania (SSER) as Events Director since 2004 and a member of the scientific board of Cosmetic Dentistry Romania since 2007. He is also the co-founder of Quintessence International Romania. Dr. Ionescu is an active member of the IADFE (International Academy for Dental-Facial Esthetics), ESCD (European Society of Esthetic Dentistry) and EAO (European Association for Osseointegration).
 He is udergoing a PhD research with the theme: Guided tissue healing using the open healing concept as alternative ridge augmentation technique in implant patients.
 Dr. Ionescus main lecturing topics are focused on minimally invasive approaches in oral surgery and implantology. He is a trainer for the open healing protocol and minimally invasive techniques using soft tissue level implants. He is an international speaker, author of different articles in the field of aesthetic dentistry and oral implantology and a co-author of the Comprehensive Esthetic Dentistry, the first volume by Romanian authors published by Quintessence International in 2015.
 Dr. Ionescu develops his professional activity in Bucharest in his private dental clinic and training center aesthetics ONE.', '1', 'Romania');
@@ -525,7 +528,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('26', '1', '21'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('26', '24', '21');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('21', 'Dr. Diana Boangar', 'Dr. Diana Boangar', 'boangar.jpg', '
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('21', 'Dr. Diana Boangar', 'Boangar', 'boangar.jpg', '
 
 Dr. Elia Diana Boangar graduated the I. Hatieganu University of Medicine and Pharmacy Cluj-Napoca in 2006, and in 2010 she finished her MSD in Orhodontics program in Cluj-Napoca and Bordeaux, France. Ever since, she has been exclusively practicing orthodontics in Cluj-Napoca and Zalau. She lectures on the subject of interdisciplinary treatment of adult patients, emphasizing the importance of properly sequencing orthodontic, periodontal and restorative treatment. She is an active member of World Federation of Orthodontists, American Association of Orthodontists and European Orthodontic Society.
 
@@ -542,13 +545,13 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('27', '1', '22'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('27', '25', '22');
 
 
-INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('26', 'Documenting and communicating with mobile dental photography: all you need to know ', '
+/*INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('26', 'Documenting and communicating with mobile dental photography: all you need to know ', '
 ', '2', '22');
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('28', '2', '22');
-INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('28', '26', '22');
+INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('28', '26', '22');*/
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('22', 'Dr. Louis Hardan', 'Dr. Louis Hardan', 'Hardan.jpg', 'Prof. Louis Hardan, head of the restorative and esthetic department at Saint Joseph University Beirut-Lebanon.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('22', 'Dr. Louis Hardan', 'Hardan', 'Hardan.jpg', 'Prof. Louis Hardan, head of the restorative and esthetic department at Saint Joseph University Beirut-Lebanon.
 He graduated dentistry in 1989 and continued his post-doctoral education at Saint Joseph University; he obtained a certificate for basic science in 1993, he completed his specialization in restorative and esthetic dentistry in 1995, and completed his PhD in oral biology and materials in 2009. 
 He was an active member of the Lebanese dental association (2006-2009) and was assigned as a general secretary of the LDA in 2009.
 At the present, he is an associate professor at Saint Joseph University and owns a private practice in his home town Byblos.
@@ -571,7 +574,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('29', '1', '23'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('29', '27', '23');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('23', 'Dr. Markus Troeltzsch', 'Dr. Markus Troeltzsch', 'troeltzsch.jpg', 'Dr. Markus Troeltzsch (MD /DMD) completed his dental training and received hisDMD in 2005 from the Dental School at the University of Erlangen in Nuremberg inGermany. In 2010, Dr. Troeltzsch completed his medical education at the Medical Schoolat the University of Erlangen, Nuremberg and received his MD.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('23', 'Dr. Markus Troeltzsch', 'Troeltzsch', 'troeltzsch.jpg', 'Dr. Markus Troeltzsch (MD /DMD) completed his dental training and received hisDMD in 2005 from the Dental School at the University of Erlangen in Nuremberg inGermany. In 2010, Dr. Troeltzsch completed his medical education at the Medical Schoolat the University of Erlangen, Nuremberg and received his MD.
 Dr. Troeltzsch continued his dental studies in 2008 and 2009 specializing in restorativeand esthetic Dentistry (Curriculum DGZ). He spent 6 months in the Department ofSurgery at the University of Sydney in Australia, and then proceeded to the Departmentof Maxillofacial Surgery at the University of Zurich in Switzerland. Afterwards heperformed his residency at the University Clinics in Bochum (Germany) and Gttingen(Germany) where he passed the board exam for maxillofacial surgery.
 Dr. Troeltzsch was appointed as consultant and senior physician for maxillofacial surgeryat the University of Gttingen in January 2016, where he still teaches up to date.
 In November 2016 he was elected as the director of the APW, the Academy forpostgraduate continuous education of the german dental association.
@@ -587,7 +590,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('30', '1', '24'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('30', '28', '24');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('24', 'Dr. Joao Barbosa', 'Dr. Joao Barbosa', 'Barbosa.jpg', 'Joo Malta Barbosa, DDS, MSc
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('24', 'Dr. Joao Barbosa', 'Barbosa', 'Barbosa.jpg', 'Joo Malta Barbosa, DDS, MSc
  Specialty Certificate in Prosthodontics, New York University, USA;
  Volunteer Researcher, Department of Biomaterials and Biomimetics, New York University, USA;
  Master of Science in Dentistry, Instituto Egas Moniz, Portugal;
@@ -600,7 +603,7 @@ INSERT INTO Abstracts (objectId, title, description, type, speakerId) VALUES ('2
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('31', '2', '200');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('31', '29', '200');
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('200', 'Dr. George Gomez', 'Dr. George Gomez', '', '', '2', 'Portugal');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('200', 'Dr. George Gomez', 'Gomez', '', '', '2', 'Portugal');
 
 
 
@@ -645,7 +648,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('33', '2', '25'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('33', '31', '25');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('25', 'Prof. Dr. Rade Paravina', 'Prof. Dr. Rade Paravina', 'Paravina.jpg', 'Rade D. Paravina, DDS, MS, PhD is a tenured Professor at the University of Texas School of Dentistry at Houston and Director of Houston Center for Biomaterials and Biomimetics (HCBB). He also holds the Ralph C. Cooley, DDS Distinguished Professorship in Biomaterials, an endowment created by world-renowned heart surgeon Denton A. Cooley, MD. Dr. Paravina has authored four books including the most recent Color in Dentistry  A Clinical Guide to Predictable Esthetics (Quintessence Publishing 2017), 95 peer-reviewed articles, 138 published abstracts, two software programs, and an educational CD. His work has been shared in 109 invited presentations and 26 CE talks on all continents. His research on color and appearance has been funded by 60 contracts and grants, and has been cited 1300+ times on Scopus and 3000+ times on Google Scholar. 
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('25', 'Prof. Dr. Rade Paravina', 'Paravina', 'Paravina.jpg', 'Rade D. Paravina, DDS, MS, PhD is a tenured Professor at the University of Texas School of Dentistry at Houston and Director of Houston Center for Biomaterials and Biomimetics (HCBB). He also holds the Ralph C. Cooley, DDS Distinguished Professorship in Biomaterials, an endowment created by world-renowned heart surgeon Denton A. Cooley, MD. Dr. Paravina has authored four books including the most recent Color in Dentistry  A Clinical Guide to Predictable Esthetics (Quintessence Publishing 2017), 95 peer-reviewed articles, 138 published abstracts, two software programs, and an educational CD. His work has been shared in 109 invited presentations and 26 CE talks on all continents. His research on color and appearance has been funded by 60 contracts and grants, and has been cited 1300+ times on Scopus and 3000+ times on Google Scholar. 
 Dr. Paravina designed/developed several dental products and tests. Together with Vita Zahnfabrik he designed two shade guides, Linearguide 3D Master and Bleachedguide 3D Master. The University of Texas Health Science Center at Houston has executed licensing agreements with Vita Zahnfabrik dealing with commercialization of these two shade guides. He has developed Dental Color Matcher, a free online educational and training program for esthetic dentistry, and the scientific protocol for evaluating "chameleon effect" of dental materials.
 Dr. Paravina is Founder and Past President of the Society for Color and Appearance in Dentistry (SCAD). He is a recipient of the 2011 E. B. Clark Award, SCAD award for lifetime achievement, and the 2014 Jerome M. and Dorothy Schweitzer Research Award of the Greater New York Academy of Prosthodontics. He is Fellow of the American Academy of Esthetic Dentistry (AAED), American Association for Dental Research (AADR), and SCAD. He serves as associate editor of the Journal of Esthetic and Restorative Dentistry, editor of its permanent bi-annual issue on color and appearance, and editorial board member for the Journal of Dentistry, Journal of Prosthetic Dentistry, Clinical Oral Investigations, Journal of Prosthodontics, and the American Journal of Dentistry.
 Dr. Paravina lectures nationally and internationally on various topics associated with color and appearance in esthetic dentistry.
@@ -658,7 +661,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('34', '1', '26'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('34', '32', '26');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('26', 'Dr. Maciej Zarow', 'Dr. Maciej Zarow', 'Zarow.jpg', 'Dr Maciej Zarow graduated from Semmelweis University in Budapest in 1995. After a three-year training programme he achieved specialization in operative dentistry in 1999. From 1998 until 2005 he was teaching at the Jagiellonian University in Krakow. There, in 2002, he defended his PhD and, in 2005, he achieved specialization in endodontics. He is also the co- author of more than 100 papers published in Polish and international journals. Dr Zarow is the author of a book called Endo-Prosthodontics: Guidelines for Clinical Prac- tice, published by Quintessence Publishing (in Polish, Russian, English, French, Croatian). Since 2012 he has been editor-in-chief of the Polish language dental magazine Medycyna Praktyczna - Stomatologia. A member of the Polish Academy of Aesthetic Dentistry, Dr Zarow has lectured extensively in Poland and other European countries. Visiting Professor of University in Chieti (Italy) 2015-2016, lecturing for postgraduate master programs at UIC in Barcelona (2012-2016). He is a honorary member of Style Italiano scientific group. He has run a private dental clinic since 1999 and postgraduate course centre, since 2003, in Krakow, Poland.', '1', 'Poland');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('26', 'Dr. Maciej Zarow', 'Zarow', 'Zarow.jpg', 'Dr Maciej Zarow graduated from Semmelweis University in Budapest in 1995. After a three-year training programme he achieved specialization in operative dentistry in 1999. From 1998 until 2005 he was teaching at the Jagiellonian University in Krakow. There, in 2002, he defended his PhD and, in 2005, he achieved specialization in endodontics. He is also the co- author of more than 100 papers published in Polish and international journals. Dr Zarow is the author of a book called Endo-Prosthodontics: Guidelines for Clinical Prac- tice, published by Quintessence Publishing (in Polish, Russian, English, French, Croatian). Since 2012 he has been editor-in-chief of the Polish language dental magazine Medycyna Praktyczna - Stomatologia. A member of the Polish Academy of Aesthetic Dentistry, Dr Zarow has lectured extensively in Poland and other European countries. Visiting Professor of University in Chieti (Italy) 2015-2016, lecturing for postgraduate master programs at UIC in Barcelona (2012-2016). He is a honorary member of Style Italiano scientific group. He has run a private dental clinic since 1999 and postgraduate course centre, since 2003, in Krakow, Poland.', '1', 'Poland');
 
 
 /* 26. Dr. Eric Van Dooren & Dr. Nuno Sousa Dias */
@@ -673,10 +676,10 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('36', '1', '28'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('36', '33', '28');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('27', 'Dr. Eric Van Dooren ', 'Dr. Eric Van Dooren ', 'VanDoreen.jpg', 'Dr. Eric Van Dooren attended the Katholieke Universiteit Leuven, Belgium, where he received his degree in dentistry in 1982. After graduating he opened a private practice in Antwerp, Belgium, which is limited to periodontics, fixed prosthodontics, and implants.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('27', 'Dr. Eric Van Dooren ', 'Dooren ', 'VanDoreen.jpg', 'Dr. Eric Van Dooren attended the Katholieke Universiteit Leuven, Belgium, where he received his degree in dentistry in 1982. After graduating he opened a private practice in Antwerp, Belgium, which is limited to periodontics, fixed prosthodontics, and implants.
 Currently Dr. Van Dooren is a Visiting Professor at University of Liege ( Belgium) and University of Marseille . He is an active member of the European Academy of Esthetic Dentistry.
 Dr Van Dooren lectures nationally and internationally , mainly on aesthetics,implants and aesthetic periodontal surgery.', '1', 'Belgium');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('28', ' Dr. Nuno Sousa Dias', ' Dr. Nuno Sousa Dias', 'nuno.jpg', 'Dr. Nuno Sousa Dias received his degree in Dentistry from Universidade Fernando Pessoa (Porto), in 2007. In the same year, he created and registered a Smiles Analysis named SAEF  Smiles Aesthetic Evaluation Form. He Completed the full-time Orthodontic Postgraduate Program at Tel Aviv University (ISRAEL) from 2008 to 2012. Was awarded with the 1st prize at the 4th Scientific Research International Competition of the Spring Meeting of the EAED (European Academy of Esthetic Dentistry), in 2010, in London (UK). He was elected ambassador for EPSOS (European Postgraduate Students Orthodontic Society) for Portugal and Israel for the years 2011 and 2012. Awarded by SEDO (Sociedad Espaola de Ortodoncia) with a fund to attend the AGE (Advanced Graduate Education) Didactic Courses at the Department of Orthodontics of HSDM (Harvard School of Dental Medicine), in 2013. He is member of several national and international dental and orthodontic scientific organisations. His practice is limited in Orthodontics at his own private clinic NSD-DENTISTRY (Portugal), since 2013 and he also Cooperates with multidisciplinary teams in Belgium, Germany and Istanbul. He is an international speaker in the field of Orthodontics and Smiles aesthetics.', '1', 'Portugal');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('28', 'Dr. Nuno Sousa Dias', 'Nuno', 'nuno.jpg', 'Dr. Nuno Sousa Dias received his degree in Dentistry from Universidade Fernando Pessoa (Porto), in 2007. In the same year, he created and registered a Smiles Analysis named SAEF  Smiles Aesthetic Evaluation Form. He Completed the full-time Orthodontic Postgraduate Program at Tel Aviv University (ISRAEL) from 2008 to 2012. Was awarded with the 1st prize at the 4th Scientific Research International Competition of the Spring Meeting of the EAED (European Academy of Esthetic Dentistry), in 2010, in London (UK). He was elected ambassador for EPSOS (European Postgraduate Students Orthodontic Society) for Portugal and Israel for the years 2011 and 2012. Awarded by SEDO (Sociedad Espaola de Ortodoncia) with a fund to attend the AGE (Advanced Graduate Education) Didactic Courses at the Department of Orthodontics of HSDM (Harvard School of Dental Medicine), in 2013. He is member of several national and international dental and orthodontic scientific organisations. His practice is limited in Orthodontics at his own private clinic NSD-DENTISTRY (Portugal), since 2013 and he also Cooperates with multidisciplinary teams in Belgium, Germany and Istanbul. He is an international speaker in the field of Orthodontics and Smiles aesthetics.', '1', 'Portugal');
 
 
 /* 27. Dr. João Fonseca */
@@ -688,7 +691,7 @@ Despite remarkable achievements in computer science and more recently significan
 INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('37', '1', '300');
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('37', '34', '300');
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('300', 'Dr. Joao Fonseca', 'Dr. Joao Fonseca', 'fonseca.jpg', '', '1', 'Portugal');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('300', 'Dr. Joao Fonseca', 'Fonseca', 'fonseca.jpg', '', '1', 'Portugal');
 
 
 
@@ -704,7 +707,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('39', '2', '29'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('39', '36', '29');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('29', 'Dr. Dan Herschbach', 'Dr. Dan Herschbach', 'herschbach.jpg', 'Dr. Herschbach graduated from the University of Bucharest in 2001.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('29', 'Dr. Dan Herschbach', 'Herschbach', 'herschbach.jpg', 'Dr. Herschbach graduated from the University of Bucharest in 2001.
 Since 2007 Dr. Herschbach has been running a private practice in the heart of Munich. He specializes in fixed prosthodontics and complex restorative dentistry with the CEREC system. His clinical work includes aesthetic dentistry, Digital Smile Design and ceramic restorations with CEREC,
 2012 ISCD International Cerec Trainer.
 Since 2014 he is Cerec Opinion Leader for CEE, Baltics and Greece.
@@ -726,7 +729,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('41', '2', '30'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('41', '38', '30');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('30', 'Dr. Luca Tacchini', 'Dr. Luca Tacchini', 'tachinni.jpg', 'Dr Luca Tacchini
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('30', 'Dr. Luca Tacchini', 'Tacchini', 'tachinni.jpg', 'Dr Luca Tacchini
 Graduated in Dentistry and Dental Prosthetics at the University of Brescia in 2007. He is an ESCD Active Member and a member of Amici di Brugg. He holds courses in Italy and abroad about direct and indirect aesthetic restorations; the practical course has come to his 21st Edition with 250 attendees. 
 He founded the company Q&O  Quality and Optimization- that organizes course of dentistry in Italy.
 He is author of articles related to restorative and fixed prosthesis.', '1', 'Italy');
@@ -741,7 +744,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('42', '1', '31'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('42', '39', '31');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('31', 'Dr. Joao Rua', 'Dr. Joao Rua', 'João Rua.jpg', 'Dr. Joao Rua graduated in Dental Medicine in IUEM (Instituto Universitrio Egas Moniz) in 1994. He is Post-graduate in Occlusion and Oral Rehabilitation by the University of Lille II, France, Postgraduate in Implantology, Postgraduate in Dental Sciences from the University of Krems, Austria. Dr. Rua is Director of the International Postgraduate Diploma of Minimally Invasive Adhesive Dentistry at IUEM, Assistant Professor of Occlusion and TMJ at IUEM, 2005-2007, Assistant Professor of Orofacial Pain and ATM at IUEM, 2007/2008, Assistant Professor of Oral Rehabilitation at IUEM, since 2007 and Visiting Professor of Occlusion and TMJ for Dental Technicians course ESSEM since 2012. 
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('31', 'Dr. Joao Rua', 'Rua', 'João Rua.jpg', 'Dr. Joao Rua graduated in Dental Medicine in IUEM (Instituto Universitrio Egas Moniz) in 1994. He is Post-graduate in Occlusion and Oral Rehabilitation by the University of Lille II, France, Postgraduate in Implantology, Postgraduate in Dental Sciences from the University of Krems, Austria. Dr. Rua is Director of the International Postgraduate Diploma of Minimally Invasive Adhesive Dentistry at IUEM, Assistant Professor of Occlusion and TMJ at IUEM, 2005-2007, Assistant Professor of Orofacial Pain and ATM at IUEM, 2007/2008, Assistant Professor of Oral Rehabilitation at IUEM, since 2007 and Visiting Professor of Occlusion and TMJ for Dental Technicians course ESSEM since 2012. 
 ', '1', '');
 
 
@@ -767,7 +770,7 @@ INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('45',
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('46', '41', '33');*/
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('32', 'Dr. Paulo Monteiro ', 'Dr. Paulo Monteiro ', 'Paulo.monteiro.jpg', 'Doctor of Dental Medicine, Instituto Superior de Cincias da Sade  Sul, Caparica, Portugal
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('32', 'Dr. Paulo Monteiro ', 'Monteiro ', 'Paulo.monteiro.jpg', 'Doctor of Dental Medicine, Instituto Superior de Cincias da Sade  Sul, Caparica, Portugal
  Masters degree in Dental Medicine, Instituto Superior de Cincias da Sade Egas Moniz, Caparica, Portugal
  Post-graduation in Aesthetic and Restorative Dentistry, ISCSEM, Caparica,Portugal
  International Professional Course of CAD/CAM technology in Restorative Dentistry, University of Zurich
@@ -782,7 +785,7 @@ Involved in research of new dental materials, including composite resins, dental
  Style Italiano effective member
  Member of the General Council of the Portuguese Dental Association-
  Exclusive clinical practice in aesthetic and cosmetic dentistry', '1', 'Portugal');
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('33', 'Dr. Ines Barbosa', 'Dr. Ines Barbosa', 'barbosa ines.jpg', 'Ines Barbosa DDS
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('33', 'Dr. Ines Barbosa', 'Barbosa', 'barbosa ines.jpg', 'Ines Barbosa DDS
 Received her degree in Dentistry from Universidade Fernando Pessoa, Porto, Portugal , in 2007.
 In 2008 concluded the course of Endodontics for Generalists, with Professor Rui Pereira da Costa in CUF Descobertas, Lisboa, Portugal.
 Received her Diploma of Aesthetic Dentistry in 2011 from Clinica Aparicio with Universidad Internacional de Catalunya , Barcelona, Spain.
@@ -819,7 +822,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('48', '2', '34'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('48', '43', '34');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('34', 'Dr. Javier Tapia', 'Dr. Javier Tapia', 'Tapia.jpg', 'Javier Tapia Guadix was born in 1978 in Madrid, Spain. He finished dental school at the European University of Madrid in 2003. Working then as associate professor in the prosthetics department during 2004.
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('34', 'Dr. Javier Tapia', 'Tapia', 'Tapia.jpg', 'Javier Tapia Guadix was born in 1978 in Madrid, Spain. He finished dental school at the European University of Madrid in 2003. Working then as associate professor in the prosthetics department during 2004.
 In 2005 he started his career as professional computer graphics artist, focused on illustration, animation and application development. He founded the company Juice - Dental Media Design for this purpose.
 He received the Collegiate Merit Award by the Spanish College of Dentists from the 1st Region in 2005, for his collaboration in the commission of new technologies.
 In 2011 he founded together with Panaghiotis Bazos and Gianfranco Politano the Bio-Emulation group.
@@ -834,7 +837,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('49', '1', '35'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('49', '44', '35');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('35', 'Dr. Gaetano Paolone', 'Dr. Gaetano Paolone', 'paolone.jpg', 'Dr. Gaetano Paolone 
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('35', 'Dr. Gaetano Paolone', 'Paolone', 'paolone.jpg', 'Dr. Gaetano Paolone 
 Adjunct Professor, Restorative Dentistry, Universit Vita Salute San Raffaele, Milano.
 
 Adjunct Professor, Restorative Dentistry, Universit Vita Salute San Raffaele, Milano.
@@ -852,7 +855,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('50', '1', '36'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('50', '45', '36');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('36', 'Dr. Raquel Zita Gomes', 'Dr. Raquel Zita', 'Zita.jpg', '
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('36', 'Dr. Raquel Zita Gomes', 'Zita', 'Zita.jpg', '
 
 Dr. Raquel Zita is a Dental Medical Doctor by the Faculty of Dental Medicine of the University of Oporto (FMDUP) (1996-2002) and Oral surgeon (specialist in oral surgery) by the Portuguese Dental Medical Association (OMD). She is a MINEC knight active member, opinion leader of Megagen Portugal, KOL of DSD by Coachman and Opinion leader of Osteobiol biomaterials. Dr. Zita is an IFZI instructor, collaboration with Bredent group, expert on Oralsurgerytube, Dentinaltubules and Dental XP educational platforms.  
 Her private practices is in Portugal and its dedicated exclusively to Implantology, advanced oral surgery and rehabilitation. She is a mentor of professional group Follow the RED and reviewer of Clinical Implant Dentistry and Related Research journal.
@@ -865,7 +868,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('51', '1', '37'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('51', '46', '37');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('37', 'Dr. Pablo Santoro', 'Dr. Pablo Santoro', 'santoro.jpg', 'Dr. Pablo Santoro  
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('37', 'Dr. Pablo Santoro', 'Santoro', 'santoro.jpg', 'Dr. Pablo Santoro  
 
 Graduated in National University of La Plata Buenos Aires Argentina in 2001
 Director in CEDGroup Odontology from 2001 to 2018
@@ -884,7 +887,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('52', '1', '38'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('52', '47', '38');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('38', 'Dr. Cosmin Dima', 'Dr. Cosmin Dima', 'dima.jpg', 'Dr. Cosmin Dima has graduated from the Faculty of Dentistry, University of Medicine and Pharmacy Carol Davila Bucuresti (UMF) in 2001. Since then he has continued and developed professionally and became a certified implantologist in 2004. From 2014 he holds a masters degree in periodontology and in 2016 he started his PhD in surgery on the theme Bone regeneration. During the years he also became member in different societies such as: Society of Esthetic Dentistry in Romania (SSER), European Society of Cosmetic Dentistry ( ESCD) , International Congress of Oral Implantologists (ICOI), Member of Implant Prosthetic Section of the ICOI. During the last years Dr Cosmin Dima sustained a lot of conferences in the field of prosthetic dentistry, esthetics and advanced surgery.', '1', 'Romania');
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('38', 'Dr. Cosmin Dima', 'Dima', 'dima.jpg', 'Dr. Cosmin Dima has graduated from the Faculty of Dentistry, University of Medicine and Pharmacy Carol Davila Bucuresti (UMF) in 2001. Since then he has continued and developed professionally and became a certified implantologist in 2004. From 2014 he holds a masters degree in periodontology and in 2016 he started his PhD in surgery on the theme Bone regeneration. During the years he also became member in different societies such as: Society of Esthetic Dentistry in Romania (SSER), European Society of Cosmetic Dentistry ( ESCD) , International Congress of Oral Implantologists (ICOI), Member of Implant Prosthetic Section of the ICOI. During the last years Dr Cosmin Dima sustained a lot of conferences in the field of prosthetic dentistry, esthetics and advanced surgery.', '1', 'Romania');
 
 
 /* 37. Dt. Pedro Brito */
@@ -894,7 +897,7 @@ INSERT INTO SpeakerTypeMap (objectId, typeId, speakerId) VALUES ('53', '1', '39'
 INSERT INTO AbstractsSpeakersMap (objectId, abstractId, speakerId) VALUES ('53', '48', '39');
 
 
-INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('39', 'Dt. Pedro Brito', 'Dt. Pedro Brito', 'Brito.jpg', 'DT Pedro Brito
+INSERT INTO Speakers (objectId, name, firstName, picture, about, type, country) VALUES ('39', 'Dt. Pedro Brito', 'Brito', 'Brito.jpg', 'DT Pedro Brito
 Degree in Dental Prosthesis, ESSEM  Egas Moniz
 
 He is  Professor of the 3rd Post-Graduation in Aesthetic Dentistry, at ISCSEM  Egas Moniz.
@@ -965,7 +968,7 @@ Session Chairpersons: Dr. Luca Dalloca & Dr. Karl Schwaninger', '5', '1');
 
 /* 6 - Dr. Raquel Zita Gomes */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('6', '6', '45');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('6', '16:30', '17:30', '1', '2', 'The foundation of aesthetic in implant dentistry: from Red to White.
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('6', '16:30', '17:30', '2', '2', 'The foundation of aesthetic in implant dentistry: from Red to White.
 Session Chairpersons: Dr. Wolfgang Richter & Dr. Maria Csillag', '6', '1');
 
 /* 7 - ESCD Certification */
@@ -1078,7 +1081,7 @@ INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name,
 Session Chairpersons: Dr. Daniel Baketic', '28', '2');
 
 /* 29 - Dr. Giuseppe Chiodera */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('29', '29', '1');
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('29', '29', '777');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('29', '14:00', '16:00', '5', '7', 'Essential lines developed by Style Italiano, modern approach for creating aesthetic posterior restoration using 3M Bulk Fill material 
 Session Chairpersons: Dr. Natasa Zeptic', '29', '2');
 
@@ -1112,9 +1115,9 @@ INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name,
 Session Chairpersons: Dr. Kamila Azimova', '35', '2');
 
 /* 36 - Dr. Louis Hardan */
-INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('36', '36', '26');
+/*INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('36', '36', '26');
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('36', '16:30', '19:00', '4', '8', 'Documenting and communicating with mobile dental photography: all you need to know 
-Session Chairpersons: Dr. Daniel Baketic', '36', '2');
+Session Chairpersons: Dr. Daniel Baketic', '36', '2');*/
 
 /* 37 - ESCD Chairperson Meeting */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('37', '37', '');
@@ -1144,8 +1147,8 @@ Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '41', '1');
 
 /* 41 - Dr. Walter Renne */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('200', '200', '22');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('200', '09:00', '11:00', '1', '9', 'The prosthetic revolution
-Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '200', '1');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('200', '09:00', '11:00', '3', '9', 'How to create a pre-surgical provisional restauration from an implant plan
+Session Chairpersons: Dr. Bogdan Culic', '200', '2');
 
 /* 42 - Dr. Joao Fonseca */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('42', '42', '34');
@@ -1166,9 +1169,14 @@ INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('45',
 INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('45', '11:30', '13:00', '1', '10', 'Erosive patients - how to treat them from the beginning to the end
 Session Chairpersons: Dr. Miguel Stanley & Dr. Constantin Varlan', '45', '1');
 
+/* 100 - Dan Herschbach */
+INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('100', '100', '36');
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('100', '11:30', '13:00', '3', '10', 'Integrated solutions - More effective treatments
+Session Chairpersons: Dr. Bogdan Culic', '100', '2');
+
 /* 46 - Cosmin Dima */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('46', '46', '47');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('46', '11:30', '12:15', '1', '10', 'Sinus lifting - everything from detailed anatomy to very complex clinical cases
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('46', '11:30', '12:15', '2', '10', 'Sinus lifting - everything from detailed anatomy to very complex clinical cases
 Session Chairpersons: Dr. Natasa Zepic & Dr. Sinisa Kovacevic', '46', '1');
 
 /* 47 - ESCD General Assembly */
@@ -1210,7 +1218,7 @@ Session Chairpersons: Dr. Igor Ristic & Dr. Joao Pimenta', '54', '1');
 
 /* 55 - Dr. Walter Renne */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('55', '55', '21');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('55', '15:00', '16:00', '1', '11', 'Pre-surgical provisional prosthetics in the esthetic zone
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('55', '15:00', '16:00', '2', '11', 'Pre-surgical provisional prosthetics in the esthetic zone
 Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '55', '1');
 
 /* 56 - Coffee Break */
@@ -1229,7 +1237,7 @@ Session Chairpersons: Dr. Alessandro Arnone & Dr. Gregory Brambilla', '58', '1')
 
 /* 59 - Dr. George Gomez */
 INSERT INTO ScheduleAbstractMap (objectId, scheduleId, abstractId) VALUES ('59', '59', '29');
-INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('59', '16:30', '18:30', '2', '12', '3M Modern Cementation techniques choosing an appropiate cement for indirect dental restorations, from self-etching cements to adhesive cementation
+INSERT INTO Schedule (objectId, beginTime, endTime, locationId, sectionId, name, abstractId, scheduleContentType) VALUES ('59', '16:30', '18:30', '3', '12', '3M Modern Cementation techniques choosing an appropiate cement for indirect dental restorations, from self-etching cements to adhesive cementation
 Session Chairpersons: Dr. Alexandr Kozhemiak', '59', '2');
 
 /* 60 - Dr. Pedro Brito */
